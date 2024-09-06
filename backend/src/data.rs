@@ -2,8 +2,8 @@ use num_rational::Rational64;
 
 #[derive(serde::Serialize, serde::Deserialize)]
 pub struct LatLon {
-    pub lat: Rational64,
-    pub lon: Rational64,
+    pub lat: f64,
+    pub lon: f64,
 }
 
 #[derive(serde::Serialize, serde::Deserialize)]
