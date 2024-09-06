@@ -2,7 +2,9 @@ use axum::extract::{FromRequestParts, Query, State};
 use axum::http::request::Parts;
 use axum::{async_trait, Json};
 use serde::de::DeserializeOwned;
+use tracing::error;
 
+use crate::data::LatLon;
 use crate::{
     data::Error,
     street_search::{NominatimSearchResponse, NominatimService},
@@ -32,11 +34,54 @@ where
     }
 }
 
+#[derive(serde::Serialize)]
+pub struct CompletionResponse {
+    osm_id: i64,
+    category: String,
+    display_name: String,
+    lat_lon: LatLon,
+    place_rank: i64,
+}
+
 pub async fn get_completion(
     State(nominatim_service): State<NominatimService>,
     QueryErr(CompletionRequest { query }): QueryErr<CompletionRequest>,
-) -> Result<Json<NominatimSearchResponse>, Error> {
+) -> Result<Json<Vec<CompletionResponse>>, Error> {
     Ok(Json(
-        nominatim_service.search().set_query(query).send().await?,
+        nominatim_service
+            .search()
+            .set_query(query)
+            .send()
+            .await?
+            .into_iter()
+            .map(
+                |NominatimSearchResponse {
+                     category,
+                     display_name,
+                     lat,
+                     lon,
+                     osm_id,
+                     place_rank,
+                     ..
+                 }| {
+                    Ok(CompletionResponse {
+                        place_rank,
+                        osm_id,
+                        category,
+                        display_name,
+                        lat_lon: LatLon {
+                            lat: lat.parse().map_err(|ex| {
+                                error!("Nominatim returned invalid lat: {ex}");
+                                Error::UnknownError
+                            })?,
+                            lon: lon.parse().map_err(|ex| {
+                                error!("Nominatim returned invalid lat: {ex}");
+                                Error::UnknownError
+                            })?,
+                        },
+                    })
+                },
+            )
+            .collect::<Result<Vec<_>, _>>()?,
     ))
 }

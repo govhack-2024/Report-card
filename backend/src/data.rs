@@ -25,7 +25,7 @@ pub enum Error {
 impl Error {
     fn get_message(&self) -> String {
         match self {
-            Error::ValidationError { message } => message,
+            Error::ValidationError { message } => message.to_string(),
             Error::ApiError { .. } => "An error occurred".to_string(),
             Error::UnknownError => "An error occurred".to_string(),
         }
@@ -33,7 +33,7 @@ impl Error {
 
     fn get_status(&self) -> StatusCode {
         match self {
-            Error::ValidationError { message } => StatusCode::BAD_REQUEST,
+            Error::ValidationError { .. } => StatusCode::BAD_REQUEST,
             Error::ApiError { .. } => StatusCode::INTERNAL_SERVER_ERROR,
             Error::UnknownError => StatusCode::INTERNAL_SERVER_ERROR,
         }

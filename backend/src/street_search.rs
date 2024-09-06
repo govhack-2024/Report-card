@@ -42,7 +42,7 @@ impl<'a> SearchRequestBuilder<'a> {
         self
     }
 
-    pub async fn send(self) -> Result<NominatimSearchResponse, Error> {
+    pub async fn send(self) -> Result<Vec<NominatimSearchResponse>, Error> {
         let response = match self
             .nominatim_service
             .get("search?format=jsonv2")
@@ -72,9 +72,9 @@ impl<'a> SearchRequestBuilder<'a> {
             });
         }
 
-        match response.json::<NominatimSearchResponse>().await {
+        match response.json::<Vec<NominatimSearchResponse>>().await {
             Err(ex) => {
-                error!("Could not deserialize api response {ex}");
+                error!("Could not deserialize api response {ex:?}");
                 Err(Error::UnknownError)
             }
 
