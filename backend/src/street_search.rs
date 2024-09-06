@@ -83,6 +83,7 @@ impl<'a> SearchRequestBuilder<'a> {
     }
 }
 
+#[derive(Clone)]
 pub struct NominatimService {
     base_url: String,
     client: &'static reqwest::Client,
