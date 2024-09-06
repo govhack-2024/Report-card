@@ -5,6 +5,8 @@ use street_search::NominatimService;
 pub mod data;
 pub mod routes;
 pub mod street_search;
+pub mod elevation;
+pub mod config;
 
 #[tokio::main]
 async fn main() {
