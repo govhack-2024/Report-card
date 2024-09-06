@@ -1,10 +1,10 @@
-use anyhow::anyhow;
 use reqwest::RequestBuilder;
+use tracing::error;
 
 use crate::data::Error;
 
 #[derive(serde::Serialize, serde::Deserialize)]
-struct NominatimSearchResponse {
+pub struct NominatimSearchResponse {
     #[serde(rename = "addresstype")]
     pub address_type: String,
     #[serde(rename = "boundingbox")]
@@ -42,19 +42,44 @@ impl<'a> SearchRequestBuilder<'a> {
         self
     }
 
-    pub async fn send(self) -> Error {
-        let response = self
+    pub async fn send(self) -> Result<NominatimSearchResponse, Error> {
+        let response = match self
             .nominatim_service
             .get("search?format=jsonv2")
             .query(&[("q", self.query)])
             .send()
-            .await?;
-        if (response.status() !=200) {
-            return anyhow!(serde_json::json! {
-                "message": "Could not get data from 
+            .await
+        {
+            Err(ex) => {
+                error!("Could not fetch from nominatim api: {}", ex);
+
+                return Err(Error::UnknownError);
+            }
+            Ok(val) => val,
+        };
+
+        if response.status() != 200 {
+            let status = response.status();
+            error!(
+                "Nominatim returned a non 200 status code: {}, Error: {:?}",
+                status,
+                response.text().await
+            );
+
+            return Err(Error::ApiError {
+                api_name: "Nominatim",
+                error: format!("Bad status code {}", status),
             });
         }
-        todo!()
+
+        match response.json::<NominatimSearchResponse>().await {
+            Err(ex) => {
+                error!("Could not deserialize api response {ex}");
+                Err(Error::UnknownError)
+            }
+
+            Ok(res) => Ok(res),
+        }
     }
 }
 
