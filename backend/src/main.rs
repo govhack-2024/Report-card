@@ -3,7 +3,7 @@ use axum::{
     routing::get,
 };
 use reqwest::header;
-use routes::get_completion;
+use routes::{get_completion, get_elevation_data};
 use street_search::NominatimService;
 use tokio::net::TcpListener;
 use tracing::Level;
@@ -38,6 +38,7 @@ async fn main() {
 
     let router = axum::Router::new()
         .route("/completion", get(get_completion))
+        .route("/elevation", get(get_elevation_data))
         .with_state(nominatim_service);
 
     let listener = TcpListener::bind("0.0.0.0:8080").await.unwrap();

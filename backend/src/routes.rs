@@ -5,6 +5,7 @@ use serde::de::DeserializeOwned;
 use tracing::error;
 
 use crate::data::LatLon;
+use crate::elevation::get_elevation;
 use crate::{
     data::Error,
     street_search::{NominatimSearchResponse, NominatimService},
@@ -84,4 +85,17 @@ pub async fn get_completion(
             )
             .collect::<Result<Vec<_>, _>>()?,
     ))
+}
+
+#[derive(serde::Serialize, serde::Deserialize)]
+pub struct GetElevationDataResponse {
+    elevation: f64,
+}
+
+pub async fn get_elevation_data(
+    QueryErr(lat_lon): QueryErr<LatLon>,
+) -> Result<Json<GetElevationDataResponse>, Error> {
+    Ok(Json(GetElevationDataResponse {
+        elevation: get_elevation(lat_lon).await?,
+    }))
 }
