@@ -2,6 +2,7 @@ use axum::{
     http::{HeaderMap, HeaderValue},
     routing::get,
 };
+use data::LatLon;
 use reqwest::header;
 use routes::{get_completion, get_elevation_data};
 use street_search::NominatimService;
@@ -14,6 +15,7 @@ pub mod data;
 pub mod elevation;
 pub mod routes;
 pub mod street_search;
+pub mod vlm_estimator;
 
 #[tokio::main]
 async fn main() {
@@ -22,6 +24,7 @@ async fn main() {
         .with_file(true)
         .with_max_level(Level::INFO)
         .init();
+
 
     let client = Box::leak(Box::new(
         reqwest::Client::builder()
