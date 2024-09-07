@@ -31,6 +31,7 @@ export const Select = <T,>({
             {option.label}
           </button>
         ))}
+      </div>
       <div className="flex flex-row flex-wrap content-center items-center gap-1 bg-white border-gray-200 shadows-md">
         {inputValue == "" ? (
           <p>Start typing to search</p>
