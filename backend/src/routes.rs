@@ -11,11 +11,6 @@ use crate::{
     street_search::{NominatimSearchResponse, NominatimService},
 };
 
-#[derive(serde::Serialize, serde::Deserialize)]
-pub struct CompletionRequest {
-    query: String,
-}
-
 pub struct QueryErr<T>(pub T);
 
 #[async_trait]
@@ -33,6 +28,11 @@ where
                 message: ex.body_text(),
             })
     }
+}
+
+#[derive(serde::Serialize, serde::Deserialize)]
+pub struct CompletionRequest {
+    query: String,
 }
 
 #[derive(serde::Serialize)]

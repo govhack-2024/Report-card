@@ -6,6 +6,10 @@ use reqwest::header;
 use routes::{get_completion, get_elevation_data};
 use street_search::NominatimService;
 use tokio::net::TcpListener;
+use tower_http::{
+    cors::{AllowMethods, CorsLayer},
+    trace::TraceLayer,
+};
 use tracing::Level;
 use tracing_subscriber::fmt;
 
@@ -39,6 +43,12 @@ async fn main() {
     let router = axum::Router::new()
         .route("/completion", get(get_completion))
         .route("/elevation", get(get_elevation_data))
+        .layer(
+            CorsLayer::new()
+                .allow_methods(AllowMethods::any())
+                .allow_origin(HeaderValue::from_static("http://localhost:5173")),
+        )
+        .layer(TraceLayer::new_for_http())
         .with_state(nominatim_service);
 
     let listener = TcpListener::bind("0.0.0.0:8080").await.unwrap();
