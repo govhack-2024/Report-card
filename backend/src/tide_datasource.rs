@@ -40,7 +40,7 @@ fn parse_row(row: HashMap<String, String>) -> Result<TideMeasurementSite, Box< d
     let mhwn: f64 = row["mhwn"].parse()?;
     let mlwn: f64 = row["mlwn"].parse()?;
     let hat: f64 = row["hat"].parse()?;
-    let msl: f64 = row["msl"].parse()?;
+    let lat: f64 = row["lat"].parse()?;
 
 
     Ok(TideMeasurementSite {
@@ -52,7 +52,7 @@ fn parse_row(row: HashMap<String, String>) -> Result<TideMeasurementSite, Box< d
         neap_tide_max: mhwn - mean_sea_level,
         neap_tide_min: mlwn - mean_sea_level,
         surge_tide_max: hat - mean_sea_level,
-        surge_tide_min: msl - mean_sea_level,
+        surge_tide_min: lat - mean_sea_level,
 
     })
 }

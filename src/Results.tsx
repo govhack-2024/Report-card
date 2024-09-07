@@ -1,5 +1,6 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useLocationRise } from "./lib/elevation-api";
+import { predictFindIntercept } from "./lib/climate_model";
 
 function Results() {
   const [searchParams] = useSearchParams();
@@ -21,6 +22,11 @@ function Results() {
     return <>Error fetching data: {data.message}</>;
   }
 
+  let start_time = new Date();
+  let predictions = predictFindIntercept(data);
+  let end_time = new Date();
+  console.log("Time taken MS: ", end_time.getTime() - start_time.getTime());
+
   return (
     <>
       <section className="mt-8 border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white">
@@ -30,9 +36,19 @@ function Results() {
           This is a report card for the Vite + React setup.
         </p>
         <section className="my-4  rounded-lg border border-gray-200">
+          <h2 className="p-4 border-b font-semibold">Timeline</h2>
+          <p className="p-4">Surge Flood: {predictions.surge_flood?.year || "Never!"}</p>
+          <p className="p-4">High Tide Flood: {predictions.high_tide_flood?.year || "Never!"}</p>
+          <p className="p-4">On Average Flooded: {predictions.average_tide_flood?.year || "Never!"}</p>
+          <p className="p-4">Low Tide Flood: {predictions.low_tide_flood?.year || "Never!"}</p>
+          <p className="p-4">Always Underwater: {predictions.always_flooded?.year || "Never!"}</p>
+
+
+        </section>
+        <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Current elevation</h2>
           <p className="p-4">{data.current_elevation}</p>
-        </section>{" "}
+        </section>
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">
             Vertical land movent estimation
