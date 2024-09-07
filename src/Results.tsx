@@ -1,14 +1,37 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useLocationRise } from "./lib/elevation-api";
+import { useCallback } from "react";
+import { DataGraph } from "./components/DataGraph";
 import { predictFindIntercept } from "./lib/climate_model";
 
 function Results() {
   const [searchParams] = useSearchParams();
 
-  const { data, isLoading } = useLocationRise({
+  const latlon = {
     lat: Number(searchParams.get("lat")),
     lon: Number(searchParams.get("lon")),
-  });
+  };
+
+  const { data, isLoading } = useLocationRise(latlon);
+
+  const getData = useCallback(
+    (year: number) => {
+      if (data && !("message" in data)) {
+        return {
+          elevation: data.current_elevation + Math.sin(year) / 100,
+          lowTide: data.tide_estimation.spring_tide_min + year / 1000,
+          highTide: data.tide_estimation.spring_tide_max + year / 1000,
+        };
+      }
+
+      return {
+        elevation: 0,
+        lowTide: 0,
+        highTide: 0,
+      };
+    },
+    [data],
+  );
 
   if (!searchParams.has("lat") || !searchParams.has("lon")) {
     return <>Please set the lat and lon parameters</>;
@@ -35,6 +58,7 @@ function Results() {
         <p className="text-gray-500">
           This is a report card for the Vite + React setup.
         </p>
+        <DataGraph getLevels={getData} />
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Timeline</h2>
           <p className="p-4">Surge Flood: {predictions.surge_flood?.year || "Never!"}</p>
