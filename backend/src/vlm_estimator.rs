@@ -1,4 +1,5 @@
 use geo::LineString;
+use log::info;
 use once_cell::sync::Lazy;
 
 use geo::prelude::HaversineLength;
@@ -44,19 +45,21 @@ static VLM_DATASET: Lazy<Vec<VLMDatasetRecord>> = Lazy::new(|| {
         dataset.push(record);
     }
 
+    info!("Loaded {} VLM records", dataset.len());
+
+
     return dataset;
 });
 
-pub fn get_vlm_estimate(location: LatLon) -> VLMEstimation {
+pub fn get_vlm_estimate(location: &LatLon) -> VLMEstimation {
     let mut closest_site = 0;
     let mut closest_distance = f64::MAX;
     
 
+    // Simple linear search to find the closest site
     for (i, site) in VLM_DATASET.iter().enumerate() {
         let linestring = LineString::<f64>::from(vec![
-            // New York City
             (location.lon, location.lat),
-            // London
             (site.lat_lon.lon, site.lat_lon.lat),
         ]);
     

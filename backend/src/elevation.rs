@@ -7,7 +7,7 @@ use tracing::error;
 static ELEVATION_API_URL: &str = "https://lris.scinfo.org.nz/services/query/v1/raster.json";
 static ELEVATION_LAYER: &str = "105722";
 
-pub async fn get_elevation(lat_lon: LatLon) -> Result<f64, Error> {
+pub async fn get_elevation(lat_lon: &LatLon) -> Result<f64, Error> {
     let api_url = format!(
         "{}?key={}&layer={}&x={}&y={}",
         ELEVATION_API_URL, CONFIG.lris_portal_api_key, ELEVATION_LAYER, lat_lon.lon, lat_lon.lat

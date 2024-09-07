@@ -1,0 +1,424 @@
+﻿WKT,id,location,latitude,longitude,ref_stn,tg_bm,cd_to_bm,mhws,mhwn,mlwn,mlws,msl,hat,lat,data_start,data_end,data_len,owner,gauge_type,pred_link,data_link,int_number,shape_X,shape_Y
+"POINT (174.7695 -36.8431)",1070,Auckland,-36.8431,174.7695,,DD1N,5.233,3.34,2.79,1.06,0.51,1.92,3.72,0.08,26/10/1903,30/06/2023,119,Ports of Auckland,Radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h070a.zip,6400,174.7695,-36.8431
+"POINT (174.7798 -41.2843)",1071,Wellington,-41.2843,174.7798,,ABPC,3.565,1.79,1.48,0.8,0.53,1.14,1.9,0.43,18/11/1944,30/06/2023,78,Wellington Regional Council,Float in stilling well,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h071a.zip,6439,174.7798,-41.2843
+"POINT (168.3454 -46.5977)",1072,Bluff,-46.5977,168.3454,,ABCC,8.62,2.8,2.39,1.11,0.63,1.76,3.1,0.32,28/12/1982,30/06/2023,32,Southport,Milltronics Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h072a.zip,6504,168.3454,-46.5977
+"POINT (176.1811 -37.641)",1073,Tauranga,-37.6410,176.1811,,B309,4.103,1.92,1.64,0.55,0.21,1.11,2.17,-0.05,01/08/1984,30/06/2023,34,Port of Tauranga,Milltronics Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h073a.zip,6415,176.1811,-37.641
+"POINT (171.5947 -41.7456)",1074,Westport,-41.7456,171.5947,,DJMC,7.351,3.47,2.76,1.28,0.56,2.03,3.86,0.12,04/12/1982,30/06/2023,22.5,Westport Harbour,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h074a.zip,6526,171.5947,-41.7456
+"POINT (174.9932 -39.9446)",1075,Whanganui River Entrance,-39.9446,174.9932,Port Taranaki,F26J,4.783,3.05,2.11,1.36,0.48,1.74,3.36,0.41,01/08/1984,01/11/2020,4.1,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h075a.zip,6447,174.9932,-39.9446
+"POINT (174.0344 -39.0562)",1076,Port Taranaki,-39.0562,174.0344,,EE9M,16.185,3.54,2.7,1.2,0.38,1.97,3.91,-0.03,02/12/1955,30/06/2023,67,Port Taranaki,Radar - VegaPuls PSWL61,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h076a.zip,6366,174.0344,-39.0562
+"POINT (173.2728 -41.2613)",1077,Nelson,-41.2613,173.2728,,AC4T,5.733,4.32,3.27,1.62,0.66,2.44,4.76,0.17,01/07/1984,30/06/2023,31,Port of Nelson,Radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h077a.zip,6458,173.2728,-41.2613
+"POINT (178.0257 -38.6737)",1078,Gisborne,-38.6737,178.0257,,ACVP,4.091,2.1,1.71,0.8,0.43,1.26,2.22,0.29,01/10/1984,30/06/2023,24,Eastland Port,Radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h078b.zip,6425,178.0257,-38.6737
+"POINT (183.4388 -43.9463)",1094,Waitangi - Chatham Island,-43.9463,-176.5612,Lyttelton,EHMW,2.495,0.9,0.69,0.22,0.04,0.48,1.02,0.01,04/10/1993,01/02/2016,9,Pacific Tsunami Warning Center,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h079a.zip,6536,183.4388,-43.9463
+"POINT (174.4902 -35.8346)",1079,Marsden Point,-35.8346,174.4902,,DJM9,4.816,2.72,2.28,0.96,0.5,1.61,3.02,0.15,20/10/1975,30/06/2023,52,Northport,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h398a.zip,6394,174.4902,-35.8346
+"POINT (168.6161 -43.9732)",1142,Jackson Bay,-43.9732,168.6161,Westport,A8VB,11.179,2.47,1.95,0.84,0.28,1.38,2.77,0,01/01/1999,01/01/2022,19,"Bureau of Meteorology (Australia), NIWA",Seaframe acoustic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h403b.zip,6518,168.6161,-43.9732
+"POINT (171.2561 -44.3941)",1034,Timaru,-44.3941,171.2561,,ET02,6.516,2.46,2.06,0.87,0.54,1.49,2.72,0.28,02/03/1987,30/06/2023,25,PrimePort,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h665a.zip,6492,171.2561,-44.3941
+"POINT (172.7219 -43.6056)",1107,Lyttelton,-43.6056,172.7219,,B40V,4.478,2.58,2.09,0.78,0.36,1.44,2.75,0.14,30/06/1903,30/06/2023,99,Lyttelton Port Christchurch,Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h667a.zip,6490,172.7219,-43.6056
+"POINT (176.92 -39.4755)",1097,Napier,-39.4755,176.9200,,B3XM,4.837,1.88,1.48,0.47,0.12,0.97,2.01,-0.01,01/01/1989,30/06/2023,30,Port of Napier,Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h668a.zip,6432,176.92,-39.4755
+"POINT (170.6241 -45.8147)",1030,Port Chalmers,-45.8147,170.6241,,DR0F,3.816,2.15,1.73,0.55,0.19,1.14,2.4,-0.05,11/06/1985,30/06/2023,30,Port Otago,Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,ftp://ftp.soest.hawaii.edu/uhslc/rqds/pacific/hourly/h669a.zip,6497,170.6241,-45.8147
+"POINT (174.7862 -36.8312)",1363,Devonport Naval Base,-36.8312,174.7862,Auckland,,,3.2,2.7,0.9,0.4,1.8,,,26/03/2009,30/06/2023,14,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/AUCT/,6399c,174.7862,-36.8312
+"POINT (183.6325 -44.024)",1352,Owenga - Chatham Island,-44.0240,-176.3675,Lyttelton,EBRK,3.59,1.33,1.07,0.31,0.05,0.69,1.39,-0.01,17/12/2007,30/06/2023,14,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/CHIT/,6536b,183.6325,-44.024
+"POINT (171.4333 -41.9033)",1407,Charleston,-41.9033,171.4333,Westport,EM6H,10.156,3.3,2.64,1.16,0.51,1.9,3.6,0.24,11/09/1997,30/06/2023,13,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/CHST/,6525,171.4333,-41.9033
+"POINT (176.2317 -40.8991)",1313,Castlepoint,-40.8991,176.2317,Napier,F6FK,4.301,1.66,1.28,0.34,0.03,0.82,1.78,-0.09,31/10/1985,30/06/2023,17,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/CPIT/,6436,176.2317,-40.8991
+"POINT (175.489 -36.1895)",1371,Korotiti Bay,-36.1895,175.4890,Marsden Point,EEFD,8.388,2.49,2.12,0.9,0.54,1.51,2.71,0.29,31/07/2010,30/06/2023,13,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/GBIT/,6407a,175.489,-36.1895
+"POINT (178.0223 -38.6757)",1358,Gisborne Tsunami,-38.6757,178.0223,Gisborne,,,,,,,,,,11/03/2008,30/06/2023,15,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/GIST/,,178.0223,-38.6757
+"POINT (173.7027 -42.4126)",1106,Kaikōura,-42.4126,173.7027,Lyttelton,AEJ0,4.229,1.82,1.41,0.41,0.09,0.93,1.94,-0.02,01/01/1995,30/06/2023,14,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/KAIT/,6487,173.7027,-42.4126
+"POINT (178.1591 -37.55)",1357,Lottin Point / Wakatiri,-37.5500,178.1591,Tauranga,F4V2,4.218,1.9,1.5,0.5,0.1,1,2.14,-0.04,11/10/2008,30/06/2023,14,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/LOTT/,6420,178.1591,-37.55
+"POINT (174.5116 -37.0461)",1090,Paratutae Island,-37.0461,174.5116,Onehunga,EW4T,5.564,3.37,2.71,1.06,0.4,1.9,3.64,0.11,28/07/2010,30/06/2023,13,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/MNKT/,6373,174.5116,-37.0461
+"POINT (176.92 -39.4755)",1360,Napier Tsunami,-39.4755,176.9200,Napier,,,,,,,,,,20/09/2007,30/06/2023,16,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/NAPT/,,176.92,-39.4755
+"POINT (172.7349 -43.5059)",1468,New Brighton Pier,-43.5059,172.7349,Lyttelton,EMMY,4.18,2.4,1.9,0.8,0.3,1.3,,,26/05/2021,30/06/2023,2,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/NBRT/,6487c,172.7349,-43.5059
+"POINT (173.0488 -34.4156)",1162,North Cape / Otou,-34.4156,173.0488,Marsden Point,,,2.5,2.05,0.93,0.44,1.48,2.75,0.19,24/12/2008,30/06/2023,15,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/NCPT/,6386a,173.0488,-34.4156
+"POINT (170.6293 -45.8141)",1362,Port Chalmers Tsunami,-45.8141,170.6293,Port Chalmers,,,,,,,,,,01/03/2010,30/06/2023,13,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/OTAT/,,170.6293,-45.8141
+"POINT (166.5882 -46.0831)",1355,Welcombe Bay,-46.0831,166.5882,Westport,EEF6,3.773,2.36,1.9,0.76,0.25,1.32,2.62,0,31/05/2002,30/06/2023,10,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/PUYT/,6511a,166.5882,-46.0831
+"POINT (182.1054 -29.2803)",1367,Boat Cove - Raoul Island,-29.2803,-177.8946,Marsden Point,,,1.79,1.52,0.77,0.47,1.14,1.93,0.28,29/05/2009,30/06/2023,14,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/RBCT/,6537a,182.1054,-29.2803
+"POINT (182.0961 -29.2511)",1198,Fishing Rock - Raoul Island,-29.2511,-177.9039,Marsden Point,,,1.78,1.52,0.68,0.4,1.1,1.92,0.23,15/02/1992,30/06/2023,13,LINZ/GeoNet,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/RFRT/,6537,182.0961,-29.2511
+"POINT (163.1912 -77.0339)",1329,Cape Roberts,-77.0339,163.1912,,,,,,,,,,,20/11/1990,30/06/2023,27.5,LINZ,Pressure transducer,,https://sealevel-data.linz.govt.nz/ROBT/,,163.1912,-77.0339
+"POINT (166.769 -77.8501)",1333,Scott Base,-77.8501,166.7690,,,,,,,,,,,09/03/1957,30/06/2023,16.5,"Antarctica New Zealand, LINZ",Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://sealevel-data.linz.govt.nz/SCOT/,2018,166.769,-77.8501
+"POINT (172.7714 -43.571)",1375,Sumner Tsunami,-43.5710,172.7714,Lyttelton,,,,,,,,,,11/08/2010,01/04/2022,11.7,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/SUMT/,,172.7714,-43.571
+"POINT (176.1812 -37.641)",1359,Tauranga Tsunami,-37.6410,176.1812,Tauranga,,,,,,,,,,07/07/2008,30/06/2023,15,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/TAUT/,,176.1812,-37.641
+"POINT (174.7798 -41.2843)",1361,Wellington Tsunami,-41.2843,174.7798,Wellington,,,,,,,,,,23/03/2007,30/06/2023,16,LINZ/GeoNet,Pressure transducer,,https://sealevel-data.linz.govt.nz/WLGT/,,174.7798,-41.2843
+"POINT (174.3265 -35.7238)",1373,Town Basin,-35.7238,174.3265,Marsden Point,A2P8,5.233,3.12,2.65,1.13,0.61,1.9,3.44,0.27,22/10/2008,30/06/2023,15,Northland Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=1770,6394a,174.3265,-35.7238
+"POINT (173.2597 -35.0063)",1376,Ben Gunn Wharf,-35.0063,173.2597,Marsden Point,F6B9,3.234,2.41,2.01,0.66,0.25,1.33,2.61,0.03,30/07/2004,30/06/2023,19,Northland Regional Council,Waterlog H-350L with USGS gas/purge unit and Unidata Ecologger,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=896,6388d,173.2597,-35.0063
+"POINT (174.1816 -36.3626)",1081,Pouto Point,-36.3626,174.1816,Port Taranaki,F6MQ,7.685,3.39,2.67,1.1,0.43,1.9,3.74,0.07,11/03/1981,30/06/2023,21,Northland Regional Council,Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=898,6377,174.1816,-36.3626
+"POINT (173.8723 -35.941)",1210,Dargaville,-35.9410,173.8723,Port Taranaki,BVFK,4.938,,,,,,,,01/08/1986,30/06/2023,26,Northland Regional Council,,,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=899,6380b,173.8723,-35.941
+"POINT (174.1211 -35.3121)",1085,Opua,-35.3121,174.1211,Marsden Point,A1E6,4.115,2.63,2.2,0.98,0.52,1.57,2.88,0.26,02/01/1960,30/06/2023,25,Northland Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=900,6391a,174.1211,-35.3121
+"POINT (173.7436 -35.0494)",1401,Whangaroa,-35.0494,173.7436,Marsden Point,EB65,4.108,2.55,2.1,0.97,0.49,1.53,2.83,0.18,21/08/2008,30/06/2023,14,Northland Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=902,6390,173.7436,-35.0494
+"POINT (173.3917 -35.5039)",1171,Opononi,-35.5039,173.3917,Port Taranaki,EVXA,4.403,2.97,2.32,0.91,0.26,1.63,3.28,-0.08,19/10/1965,30/06/2023,5,Northland Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,https://www.nrc.govt.nz/environment/environmental-data/environmental-data-hub/?moduleId=7&collectionId=42&displayId=1&siteId=903,6381,173.3917,-35.5039
+"POINT (174.8593 -37.0553)",1444,Weymouth,-37.0553,174.8593,Onehunga,EW5L,5.854,4.5,3.6,1.6,0.6,2.6,,,02/08/2019,14/09/2019,0.15,,,,,6374b,174.8593,-37.0553
+"POINT (173.9507 -40.9422)",1447,Waihinau Bay,-40.9422,173.9507,Nelson,BM BW 1/96,3.583,,,,,,,,13/09/1996,22/11/1996,0.01,,,,,,173.9507,-40.9422
+"POINT (174.663 -36.7705)",1459,Lucas Creek,-36.7705,174.6630,Auckland,,,,,,,,,,06/09/1979,06/04/1980,0.5,,,,,,174.663,-36.7705
+"POINT (188.5753 -14.0255)",1448,Aliepata,-14.0255,-171.4247,,,,1.3,0.9,0.4,0.1,0.7,,,31/08/2019,26/10/2019,0.2,,,,,,188.5753,-14.0255
+"POINT (188.2112 -14.0097)",1449,Siumu Bay,-14.0097,-171.7888,,,,1.3,1,0.5,0.1,0.7,,,08/09/2019,12/10/2019,0.1,,,,,,188.2112,-14.0097
+"POINT (188.1942 -9.1677)",1093,Nukunonu Island,-9.1677,-171.8058,Apia,,,,,,,,,,18/06/1994,18/07/1994,,,,,,,188.1942,-9.1677
+"POINT (177.4435 -37.9585)",1238,Haurere Point,-37.9585,177.4435,Tauranga,,,,,,,,,,,,,,,,,6418b,177.4435,-37.9585
+"POINT (174.7742 -36.3257)",1003,Whangateau Harbour,-36.3257,174.7742,Auckland,,,2.7,2.3,0.6,0.2,1.5,,,,,,,,,,6396c,174.7742,-36.3257
+"POINT (174.077 -35.2108)",1006,Moturoa Island,-35.2108,174.0770,Marsden Point,,,,,,,,,,,,,,,,,,174.077,-35.2108
+"POINT (168.8446 -46.6577)",1009,Waipapa Point,-46.6577,168.8446,Bluff,,,2.7,2.5,0.9,0.6,1.7,,,,,0.05,,,,,6502,168.8446,-46.6577
+"POINT (167.568 -47.1545)",1011,Easy Harbour,-47.1545,167.5680,Bluff,BE5R,4.932,2.6,2.2,0.9,0.4,1.6,,,11/10/1998,30/03/1999,0.55,,,,,6509a,167.568,-47.1545
+"POINT (167.6682 -47.1955)",1013,Port Pegasus,-47.1955,167.6682,Bluff,,,,,,,,,,,,,,,,,,167.6682,-47.1955
+"POINT (167.6781 -46.9615)",1014,Ernest Islands,-46.9615,167.6781,Bluff,,,2.2,1.8,0.7,0.2,1.2,,,20/10/1997,22/11/1997,0.1,,,,,6510,167.6781,-46.9615
+"POINT (200.2237 -21.2292)",1023,Rarotonga,-21.2292,-159.7763,Rarotonga,,,,,,,,,,,,,,,,,,200.2237,-21.2292
+"POINT (202.0238 -9.0051)",1024,Penrhyn Island,-9.0051,-157.9762,Apia,,,,,,,,,,,,,,,,,,202.0238,-9.0051
+"POINT (173.0234 -41.1383)",1035,Motueka,-41.1383,173.0234,Nelson,AC4J,6.452,4.2,3.4,1.4,0.6,2.4,,,24/04/1986,17/01/2012,0.2,,,,,6455a,173.0234,-41.1383
+"POINT (167.7892 -44.5803)",1040,Anita Bay,-44.5803,167.7892,Westport,E8V7,3.072,2.5,1.9,0.9,0.3,1.4,,,27/02/1996,11/03/2008,0.2,,,,,6516,167.7892,-44.5803
+"POINT (174.0953 -36.2364)",1047,Island Point,-36.2364,174.0953,Port Taranaki,,,3.6,2.8,1.1,0.3,1.9,,,12/03/1981,10/04/1981,0.1,,,,,6376,174.0953,-36.2364
+"POINT (175.8667 -37)",1057,Pauanui,-37.0000,175.8667,Tauranga,,,,,,,,,,15/05/1983,23/06/1983,0.1,,,,,6413,175.8667,-37
+"POINT (174.8281 -37.0366)",1064,Papakura Channel - LPG Terminal,-37.0366,174.8281,Onehunga,,,3.9,3.2,1.1,0.4,2.1,,,,,,,,,,6374a,174.8281,-37.0366
+"POINT (168.187 -47.0787)",1065,Port Adventure,-47.0787,168.1870,Bluff,BE5P,13.149,2.9,2.4,1.1,0.6,1.8,,,27/09/1998,23/03/1999,0.4,,,,,6508,168.187,-47.0787
+"POINT (174.5262 -35.7139)",1067,Pataua,-35.7139,174.5262,Marsden Point,,,,,,,,,,,,,,,,,,174.5262,-35.7139
+"POINT (167.8071 -46.3824)",1069,Kawakaputa Bay,-46.3824,167.8071,Bluff,BGUR,6.776,2.8,2.3,0.9,0.4,1.6,,,29/04/1981,30/06/1999,0.3,,,,,6506a,167.8071,-46.3824
+"POINT (173.9634 -35.218)",1086,Kerikeri,-35.2180,173.9634,Marsden Point,,,2.3,1.9,0.7,0.2,1.3,,,29/07/1981,20/08/1981,0.05,,,,,6390d,173.9634,-35.218
+"POINT (175.4923 -36.1185)",1103,Rakitu Island (Arid Island),-36.1185,175.4923,Marsden Point,,,,,,,,,,,,0.02,,,,,,175.4923,-36.1185
+"POINT (172.0553 -34.1774)",1113,Princes Island,-34.1774,172.0553,Port Taranaki,,,,,,,,,,,,,,,,,,172.0553,-34.1774
+"POINT (173.05 -40.9667)",1119,Astrolabe Roadstead,-40.9667,173.0500,Nelson,,,4.8,3.8,1.2,0.2,2.5,,,,,,,,,,6455,173.05,-40.9667
+"POINT (168.0523 -44.2594)",1121,Awarua Point,-44.2594,168.0523,Westport,,,,,,,,,,,,,,,,,,168.0523,-44.2594
+"POINT (172.681 -34.4214)",1127,Cape Reinga,-34.4214,172.6810,Port Taranaki,,,,,,,,,,,,,,,,,,172.681,-34.4214
+"POINT (172.6815 -40.6769)",1129,Collingwood,-40.6769,172.6815,Nelson,,,4.7,3.8,1.4,0.5,2.6,,,,,,,,,,6453,172.6815,-40.6769
+"POINT (175.7825 -36.4402)",1132,Cuvier Island,-36.4402,175.7825,Auckland,,,,,,,,,,,,,,,,,,175.7825,-36.4402
+"POINT (175.2847 -36.9892)",1135,Waimango Point,-36.9892,175.2847,Auckland,,,,,,,,,,,,,,,,,,175.2847,-36.9892
+"POINT (169.0534 -43.8545)",1137,Haast River Entrance,-43.8545,169.0534,Westport,,,2.3,1.8,0.6,0.2,1.2,,,,,,,,,,6519,169.0534,-43.8545
+"POINT (170.9612 -42.7242)",1139,Hokitika River Bar,-42.7242,170.9612,Westport,,,2.3,1.8,0.6,0.2,1.2,,,,,,,,,,6523,170.9612,-42.7242
+"POINT (175.1592 -36.9248)",1144,Karamurama Island,-36.9248,175.1592,Auckland,,,,,,,,,,,,,,,,,,175.1592,-36.9248
+"POINT (174.9347 -36.8063)",1157,Motuihe Island,-36.8063,174.9347,Auckland,,,,,,,,,,,,0.002,,,,,,174.9347,-36.8063
+"POINT (172.715 -40.7449)",1169,Onekaka,-40.7449,172.7150,Nelson,,,,,,,,,,,,,,,,,,172.715,-40.7449
+"POINT (172.69 -40.5948)",1173,Pakawau,-40.5948,172.6900,Nelson,,,,,,,,,,,,,,,,,,172.69,-40.5948
+"POINT (174.0206 -36.1385)",1184,Ruawai Wharf,-36.1385,174.0206,Port Taranaki,,,,,,,,,,,,,,,,,,174.0206,-36.1385
+"POINT (168.3597 -46.6116)",1188,Stirling Point,-46.6116,168.3597,Bluff,,,,,,,,,,,,,,,,,,168.3597,-46.6116
+"POINT (168.2374 -46.5134)",1190,New River Entrance,-46.5134,168.2374,Bluff,,,2.8,2.5,0.7,0.4,1.6,,,,,,,,,,6505,168.2374,-46.5134
+"POINT (178.8 -49.6667)",1192,Antipodes Island,-49.6667,178.8000,Bluff,,,1.8,,,,1.1,,,,,0.001,,,,,6535,178.8,-49.6667
+"POINT (179.0269 -47.7523)",1193,Bounty Islands,-47.7523,179.0269,Bluff,,,,,,,,,,,,,,,,,,179.0269,-47.7523
+"POINT (172.1005 -41.0963)",1202,Kohaihai Bluff,-41.0963,172.1005,Westport,,,,,,,,,,,,,,,,,,172.1005,-41.0963
+"POINT (172.428 -40.6417)",1203,Paturau,-40.6417,172.4280,Westport,,,,,,,,,,,,,,,,,,172.428,-40.6417
+"POINT (174.7484 -36.8358)",1205,Westhaven Inlet,-36.8358,174.7484,Auckland,,,,,,,,,,,,,,,,,,174.7484,-36.8358
+"POINT (174.0908 -35.1271)",1208,Kowhatuhuri,-35.1271,174.0908,Marsden Point,,,,,,,,,,,,,,,,,,174.0908,-35.1271
+"POINT (177.1672 -17.7492)",1211,Malolo Island,-17.7492,177.1672,,,,,,,,,,,,,,,,,,,177.1672,-17.7492
+"POINT (177.1333 -17.3667)",1212,Kuata Island,-17.3667,177.1333,,,,,,,,,,,,,,,,,,,177.1333,-17.3667
+"POINT (204.1142 -5.6436)",1214,Starbuck Island,-5.6436,-155.8858,,,,,,,,,,,,,,,,,,,204.1142,-5.6436
+"POINT (205.0822 -4.0123)",1215,Malden Island,-4.0123,-154.9178,,,,,,,,,,,,,,,,,,,205.0822,-4.0123
+"POINT (174.6253 -41.2958)",1217,Oteranga Bay,-41.2958,174.6253,Wellington,,,0.9,0.7,0.5,0.3,0.6,,,,,0.2,,,,,6441,174.6253,-41.2958
+"POINT (177.4162 -39.0605)",1219,Wairoa River Mouth,-39.0605,177.4162,Napier,,,1.6,1.5,0.3,0.2,0.9,,,,,,,,,,6430,177.4162,-39.0605
+"POINT (167.7365 -46.345)",1220,Ruahine Road,-46.3450,167.7365,Bluff,,,,,,,,,,,,,,,,,,167.7365,-46.345
+"POINT (178.9518 -16.4659)",1224,Ravi Ravi Point,-16.4659,178.9518,,,,,,,,,,,,,,,,,,,178.9518,-16.4659
+"POINT (166.885 -45.539)",1235,Chatham Point,-45.5390,166.8850,Westport,,,,,,,,,,,,0.001,,,,,,166.885,-45.539
+"POINT (174.1127 -41.2394)",1240,Kahikatea Bay,-41.2394,174.1127,Picton,,,,,,,,,,,,,,,,,,174.1127,-41.2394
+"POINT (172.1 -41.25)",1242,Karamea River Entrance,-41.2500,172.1000,Westport,,,,,,,,,,,,,,,,,6527,172.1,-41.25
+"POINT (175.9757 -37.5172)",1244,Katikati Entrance - Kauri Point,-37.5172,175.9757,Tauranga,,,,,,,,,,,,,,,,,6414a,175.9757,-37.5172
+"POINT (176.4549 -37.7561)",1249,Maketu Estuary Entrance,-37.7561,176.4549,Tauranga,,,,,,,,,,,,,,,,,6416,176.4549,-37.7561
+"POINT (175.0425 -36.8792)",1252,Maraetai,-36.8792,175.0425,Auckland,,,,,,,,,,,,,,,,,6402,175.0425,-36.8792
+"POINT (174.4246 -36.8315)",1256,Muriwai Beach,-36.8315,174.4246,Onehunga,,,,,,,,,,,,,,,,,6375e,174.4246,-36.8315
+"POINT (176.337 -37.7136)",1265,Papamoa Beach,-37.7136,176.3370,Tauranga,,,,,,,,,,,,,,,,,6415a,176.337,-37.7136
+"POINT (174.9794 -40.8917)",1266,Paraparaumu Beach,-40.8917,174.9794,Port Taranaki,,,,,,,,,,,,,,,,,6443b,174.9794,-40.8917
+"POINT (174.4663 -36.9543)",1268,Piha Beach,-36.9543,174.4663,Onehunga,,,,,,,,,,,,,,,,,6375b,174.4663,-36.9543
+"POINT (177.867 -39.2834)",1270,Portland Island,-39.2834,177.8670,Napier,,,,,,,,,,,,,,,,,6428,177.867,-39.2834
+"POINT (172.2402 -43.891)",1274,Rakaia River Mouth,-43.8910,172.2402,Lyttelton,,,,,,,,,,,,,,,,,6491a,172.2402,-43.891
+"POINT (171.513 -44.185)",1275,Rangitata River Entrance,-44.1850,171.5130,Timaru,,,,,,,,,,,,,,,,,6491c,171.513,-44.185
+"POINT (176.1712 -37.6833)",1281,Town Wharf,-37.6833,176.1712,Tauranga,,,,,,,,,,,,,,,,,6414c,176.1712,-37.6833
+"POINT (175.9387 -37.3964)",1282,Waihi Beach,-37.3964,175.9387,Tauranga,,,,,,,,,,,,,,,,,6413b,175.9387,-37.3964
+"POINT (177.8291 -39.0721)",1284,Waikokopu,-39.0721,177.8291,Napier,,,1.6,1.5,0.4,0.2,0.9,,,,,,,,,,6429,177.8291,-39.0721
+"POINT (174.7255 -37.233)",1289,Waiuku,-37.2330,174.7255,Onehunga,,,,,,,,,,,,,,,,,6375a,174.7255,-37.233
+"POINT (166.8538 -45.6373)",1296,Oke Island,-45.6373,166.8538,Westport,,,,,,,,,,,,0.001,,,,,,166.8538,-45.6373
+"POINT (174.8237 -38.0064)",1299,Aotea Harbour,-38.0064,174.8237,Port Taranaki,,,3.7,2.9,1.2,0.4,2.1,,,,,,,,,,6370,174.8237,-38.0064
+"POINT (175.9858 -37.4689)",1303,Bowentown - Katikati Entrance,-37.4689,175.9858,Tauranga,,,,,,,,,,,,,,,,,6414,175.9858,-37.4689
+"POINT (166.0517 -50.8319)",1312,Auckland Island - Carnley Harbour,-50.8319,166.0517,Bluff,EU70,6.361,1.9,1.4,0.7,0.2,1.1,,,15/02/1985,22/03/2015,0.01,,,,,6534,166.0517,-50.8319
+"POINT (173.9297 -42.1735)",1315,Clarence,-42.1735,173.9297,Lyttelton,,,,,,,,,,,,,,,,,,173.9297,-42.1735
+"POINT (176.79 -40.2169)",1316,Blackhead Point,-40.2169,176.7900,Napier,,,,,,,,,,,,,,,,,,176.79,-40.2169
+"POINT (174.811 -36.8491)",1317,Okahu Bay,-36.8491,174.8110,Auckland,,,,,,,,,,,,,,,,,,174.811,-36.8491
+"POINT (175.812 -41.3589)",1318,Honeycomb Point,-41.3589,175.8120,Wellington,,,,,,,,,,,,,,,,,,175.812,-41.3589
+"POINT (174.8036 -41.3352)",1322,Lyall Bay,-41.3352,174.8036,Wellington,,,,,,,,,,,,,,,,,,174.8036,-41.3352
+"POINT (171.1729 -71.8922)",1335,Possession Island,-71.8922,171.1729,,,,,,,,,,,,,0.002,,,,,,171.1729,-71.8922
+"POINT (166.6014 -46.0318)",1337,Reef Point,-46.0318,166.6014,Westport,,,,,,,,,,,,,,,,,,166.6014,-46.0318
+"POINT (166.698 -45.8702)",1338,Edwardson Sound,-45.8702,166.6980,Westport,,,,,,,,,,,,,,,,,,166.698,-45.8702
+"POINT (175.5263 -37.1369)",1343,Sewer Beacon,-37.1369,175.5263,Auckland,,,,,,,,,,,,0.15,,,,,,175.5263,-37.1369
+"POINT (175.5435 -37.1461)",1344,Shortland Wharf,-37.1461,175.5435,Auckland,,,,,,,,,,,,,,,,,,175.5435,-37.1461
+"POINT (173.9595 -40.737)",1347,Patuki,-40.7370,173.9595,Nelson,,,,,,,,,,,,0.04,,,,,,173.9595,-40.737
+"POINT (173.7973 -40.8894)",1348,Kupe Bay,-40.8894,173.7973,Nelson,,,,,,,,,,,,0.001,,,,,,173.7973,-40.8894
+"POINT (174.3468 -35.8021)",1368,Portland Wharf,-35.8021,174.3468,Marsden Point,unknown BM,3.849,3.1,2.6,1.1,0.4,1.8,,,18/03/2009,14/10/2009,0.7,,,,,6395a,174.3468,-35.8021
+"POINT (175.4655 -36.5245)",1377,Port Charles,-36.5245,175.4655,Marsden Point,EM6D,,2.3,1.9,0.6,0.1,1.2,,,23/09/2009,17/05/2011,0.2,,,,,6409,175.4655,-36.5245
+"POINT (202.0834 -21.9352)",1378,Mangaia,-21.9352,-157.9166,,,,,,,,,,,16/12/2010,12/02/2011,0.2,,,,,,202.0834,-21.9352
+"POINT (194.1611 -10.85)",1340,Pukapuka Island,-10.8500,-165.8389,,,,,,,,,,,,,,,,,,6610,194.1611,-10.85
+"POINT (179.1962 -8.5211)",1025,Funafuti,-8.5211,179.1962,,,,,,,,,,,,,,,,,,6744,179.1962,-8.5211
+"POINT (184.7951 -21.1393)",1038,Nuku Alofa,-21.1393,-175.2049,,,,,,,,,,,20/06/1990,01/01/2017,12,,,,,6660,184.7951,-21.1393
+"POINT (185.6511 -19.8188)",1039,Lifuka Island,-19.8188,-174.3489,Nuku'alofa,Pangai Pin 1,1.473,1.3,1.1,0.4,0.1,0.7,,,14/06/1994,20/12/2018,0.5,,,,,6666,185.6511,-19.8188
+"POINT (177.4505 -17.617)",1049,Lautoka,-17.6170,177.4505,Suva,,,,,,,,,,,,,,,,,6707,177.4505,-17.617
+"POINT (209.7962 -9.9138)",1216,Caroline Island,-9.9138,-150.2038,,,,,,,,,,,,,,,,,,6611,209.7962,-9.9138
+"POINT (176.9857 -37.8594)",1095,Moutohora Island,-37.8594,176.9857,Tauranga,F31A,3.79,2,1.6,0.5,0.1,1.1,,,27/05/1994,19/01/2019,0.4,,,,,6417,176.9857,-37.8594
+"POINT (174.6074 -37.0117)",1143,Cornwallis,-37.0117,174.6074,Onehunga,CLUD,17.102,3.7,3.1,1.2,0.6,2.2,,,10/05/2019,17/06/2019,0.1,,,,,6374,174.6074,-37.0117
+"POINT (174.1612 -35.2345)",1152,Motuarohia Island (Roberton Island),-35.2345,174.1612,Marsden Point,BM TP 4,3.607,,,,,,,,23/03/2013,05/04/2013,0.05,,,,,,174.1612,-35.2345
+"POINT (174.7549 -36.7319)",1160,Murrays Bay,-36.7319,174.7549,Auckland,EX4Y,4.2,3.1,2.6,0.9,0.3,1.7,,,24/11/1975,16/02/2017,0.3,,,,,6399a,174.7549,-36.7319
+"POINT (178.4501 -18.1248)",1196,Suva,-18.1248,178.4501,Suva,,,,,,,,,,,,,,,,,6705,178.4501,-18.1248
+"POINT (178.5179 -17.8054)",1221,Tai Levu,-17.8054,178.5179,Suva,,,,,,,,,,,,,,,,,6711,178.5179,-17.8054
+"POINT (179.366 -16.3597)",1222,Malau,-16.3597,179.3660,,,,,,,,,,,,,,,,,,6720,179.366,-16.3597
+"POINT (186.0163 -18.6477)",1225,Neiafu Harbour,-18.6477,-173.9837,,,,,,,,,,,20/09/2008,14/10/2008,,,,,,6671,186.0163,-18.6477
+"POINT (200.2028 -21.2233)",1228,Avatiu Harbour,-21.2233,-159.7972,Rarotonga,,,,,,,,,,10/07/1990,26/07/1990,,,,,,6598,200.2028,-21.2233
+"POINT (200.2147 -18.858)",1229,Aitutaki,-18.8580,-159.7853,Avatiu,,,,,,,,,,,,,,,,,6603,200.2147,-18.858
+"POINT (187.3706 -13.5191)",1231,Asau Harbour,-13.5191,-172.6294,Apia,,,,,,,,,,,,,,,,,6689,187.3706,-13.5191
+"POINT (174.2552 -41.7332)",1306,Cape Campbell,-41.7332,174.2552,Lyttelton,F1TN,6.532,1.6,1.2,0.4,0,0.8,,,20/04/1950,14/12/2017,0.15,,,,,6485,174.2552,-41.7332
+"POINT (199.0097 -10.4275)",1339,Manihiki,-10.4275,-160.9903,,,,,,,,,,,,,,,,,,6607,199.0097,-10.4275
+"POINT (196.8886 -13.2693)",1341,Suwarrow Island,-13.2693,-163.1114,,,,,,,,,,,,,,,,,,6605,196.8886,-13.2693
+"POINT (202.5722 1.8721)",1345,Christmas Island,1.8721,-157.4278,,,,,,,,,,,,,,,,,,6617,202.5722,1.8721
+"POINT (188.7812 -9.3803)",1420,Fakaofo,-9.3803,-171.2188,,,,,,,,,,,20/07/2011,27/07/2011,0.005,,,,,6691,188.7812,-9.3803
+"POINT (167.1026 -45.0792)",1016,Taiporoporo / Charles Sound,-45.0792,167.1026,Westport,EC4T,3.926,2.9,2.3,0.8,0.2,1.5,,,27/11/1997,25/04/2019,0.4,,,,,6514a,167.1026,-45.0792
+"POINT (167.3689 -44.8647)",1020,Te Houhou / George Sound,-44.8647,167.3689,Westport,,,2.5,2.1,0.9,0.3,1.4,,,25/10/1997,22/11/1997,0.1,,,,,6514b,167.3689,-44.8647
+"POINT (166.9785 -45.3008)",1021,Blanket Bay,-45.3008,166.9785,Westport,EBMB,2.942,2.3,1.7,0.8,0.2,1.2,,,22/01/1985,26/04/2019,0.3,,,,,6513b,166.9785,-45.3008
+"POINT (174.2523 -36.2574)",1082,Tinopai,-36.2574,174.2523,Port Taranaki,F4C6,8.229,3.5,2.8,1,0.2,1.9,,,20/02/1981,05/06/2020,0.4,,,,,6379,174.2523,-36.2574
+"POINT (174.38 -36.5703)",1083,Shelly Beach,-36.5703,174.3800,Port Taranaki,F4BX,4.529,3.9,3,1.2,0.3,2.1,,,30/05/1970,02/06/2020,0.4,,,,,6378,174.38,-36.5703
+"POINT (173.7733 -41.0549)",1105,Elaine Bay,-41.0549,173.7733,Nelson,EG06,4.887,2.8,2,1.1,0.4,1.5,,,13/09/1996,05/06/2020,0.8,,,,,6469,173.7733,-41.0549
+"POINT (173.844 -40.9265)",1134,Elmslie Bay,-40.9265,173.8440,Nelson,F4U6,4.165,2.7,2,1,0.4,1.5,,,11/05/1987,17/01/2020,0.6,,,,,6466,173.844,-40.9265
+"POINT (188.2486 -13.8507)",1226,Apia,-13.8507,-171.7514,Apia,SAM 16,2.864,1.4,1.1,0.6,0.3,0.9,1.64,0.2,27/02/1993,10/10/2019,26,"Bureau of Meteorology, Australia",SEAFRAME,,,6684,188.2486,-13.8507
+"POINT (174.7233 -36.4853)",1247,Mahurangi Harbour,-36.4853,174.7233,Auckland,F4V8,3.151,2.9,2.4,0.9,0.4,1.7,,,09/02/1982,03/06/2020,0.3,,,,,6398,174.7233,-36.4853
+"POINT (174.5987 -36.0824)",1250,Mangawhai Heads,-36.0824,174.5987,Auckland,F4C5,15.568,2.4,2.1,0.8,0.4,1.4,,,14/12/2019,03/02/2020,0.15,,,,,6396a,174.5987,-36.0824
+"POINT (173.9196 -41.2741)",1257,Okiwa Bay,-41.2741,173.9196,Picton,,,1.5,1,0.5,0,0.7,,,01/01/1942,30/01/1942,0.1,,,,,6478,173.9196,-41.2741
+"POINT (174.6965 -36.8232)",1262,Onetaunga Bay,-36.8232,174.6965,Auckland,,,3.4,2.9,0.9,0.5,2,,,,,,,,,,6399d,174.6965,-36.8232
+"POINT (175.8517 -37.0094)",1277,Tairua,-37.0094,175.8517,Tauranga,F4BP,2.532,1.9,1.6,0.5,0.2,1.1,,,14/04/1983,02/09/2019,0.4,,,,,6412,175.8517,-37.0094
+"POINT (177.6743 -37.7406)",1280,Te Kaha,-37.7406,177.6743,Tauranga,F4V5,11.639,2,1.7,0.6,0.2,1.1,,,16/02/2020,25/04/2020,0.2,,,,,6419a,177.6743,-37.7406
+"POINT (167.1391 -45.2712)",1319,Macdonell Island,-45.2712,167.1391,Westport,F3A9,2.723,2.3,1.7,0.8,0.2,1.3,,,08/02/2019,26/04/2019,0.2,,,,,6513c,167.1391,-45.2712
+"POINT (174.1405 -40.9525)",1321,Titi Island,-40.9525,174.1405,Nelson,BM TK 5/97,3.764,,,,,,,,09/03/1997,11/03/1997,0.01,,,,,,174.1405,-40.9525
+"POINT (166.9719 -45.1966)",1331,Deas Cove,-45.1966,166.9719,Westport,F3AC,2.935,2.3,1.8,0.8,0.2,1.3,,,08/02/2019,26/04/2019,0.2,,,,,6514,166.9719,-45.1966
+"POINT (174.186 -41.1756)",1422,Dryden Bay,-41.1756,174.1860,Picton,EX4N,2.775,1.6,1.1,0.5,0,0.8,,,22/10/2016,09/02/2017,0.3,,,,,6470a,174.186,-41.1756
+"POINT (174.9864 -36.8887)",1423,Pine Harbour,-36.8887,174.9864,Auckland,EX5R,4.379,3.2,2.7,0.9,0.3,1.8,,,08/11/2016,07/03/2017,0.4,,,,,6401b,174.9864,-36.8887
+"POINT (166.8933 -45.27)",1439,Shelter Islands,-45.2700,166.8933,Westport,F3A3,4.427,2.3,1.8,0.8,0.2,1.3,,,07/02/2019,25/04/2019,0.2,,,,,6513d,166.8933,-45.27
+"POINT (167.0117 -45.4133)",1440,Turn Point,-45.4133,167.0117,Westport,F3A6,2.667,2.3,1.7,0.8,0.2,1.3,,,07/02/2019,25/04/2019,0.2,,,,,6513a,167.0117,-45.4133
+"POINT (174.6722 -36.7876)",1442,Hobsonville,-36.7876,174.6722,Auckland,EW4P,4.714,3.6,3.1,1.1,0.6,2.1,,,07/05/2019,16/06/2019,0.15,,,,,6399e,174.6722,-36.7876
+"POINT (190.1328 -19.0544)",1001,Niue Island,-19.0544,-169.8672,Nuie,,,,,,,,,,09/07/1994,14/05/2005,,,,,,6604,190.1328,-19.0544
+"POINT (172.5333 -40.5833)",1004,Whanganui Inlet,-40.5833,172.5333,Westport,,,2.9,2.3,0.8,0,1.4,,,,,,,,,,6528,172.5333,-40.5833
+"POINT (174.3581 -35.364)",1007,Rocky Point,-35.3640,174.3581,Marsden Point,,,2.2,2,0.6,0.3,1.3,,,,,0.005,,,,,6392,174.3581,-35.364
+"POINT (173.936 -35.0074)",1010,Waiiti Bay,-35.0074,173.9360,Marsden Point,,,2.2,2,0.7,0.5,1.3,,,,,0.05,,,,,6390a,173.936,-35.0074
+"POINT (170.7279 -45.7773)",1033,Taiaroa Head,-45.7773,170.7279,Port Chalmers,,,,,,,,,,01/11/1991,17/01/1992,0.25,,,,,,170.7279,-45.7773
+"POINT (174.7916 -36.6286)",1036,Hobbs Bay,-36.6286,174.7916,Auckland,,,,,,,,,,05/04/1985,09/05/1985,0.1,,,,,,174.7916,-36.6286
+"POINT (172.85 -40.8333)",1037,Motupipi Inlet,-40.8333,172.8500,Nelson,,,5,4.1,1.5,0.6,2.8,,,,,,,,,,6454,172.85,-40.8333
+"POINT (173.8917 -40.858)",1045,Catherine Cove,-40.8580,173.8917,Nelson,EC50,3.157,2.6,1.9,0.8,0.2,1.4,,,01/03/1997,01/06/1997,0.3,,,,,6465,173.8917,-40.858
+"POINT (174.1893 -41.2352)",1048,Te Iro Bay,-41.2352,174.1893,Picton,EX4L,3.365,1.4,0.9,0.4,0,0.7,,,27/10/2016,09/02/2017,0.3,,,,,6479,174.1893,-41.2352
+"POINT (173.978 -36.1229)",1050,Tikinui,-36.1229,173.9780,Port Taranaki,B5RD,11.042,3.8,2.9,0.8,0.1,2,,,10/02/1981,25/03/1981,0.1,,,,,6380a,173.978,-36.1229
+"POINT (174.2324 -36.1558)",1052,Whakapirau,-36.1558,174.2324,Port Taranaki,,,3.9,3,1.2,0.3,2.1,,,24/02/1981,26/03/1981,0.1,,,,,6379a,174.2324,-36.1558
+"POINT (175.486 -36.3204)",1055,Tryphena,-36.3204,175.4860,Marsden Point,EBJR,3.379,2.6,2.2,0.9,0.4,1.5,,,07/09/1979,22/02/2009,0.2,,,,,6407,175.486,-36.3204
+"POINT (167.6448 -47.2437)",1066,Small Craft Retreat,-47.2437,167.6448,Bluff,BE5Q,3.762,3,2.5,1.1,0.6,1.8,,,06/10/1998,26/03/1999,0.4,,,,,6508a,167.6448,-47.2437
+"POINT (174.1205 -35.2619)",1080,Russell,-35.2619,174.1205,Marsden Point,C8ED,4.148,2.5,2,0.9,0.4,1.4,,,13/10/1973,29/05/2013,0.2,,,,,6391,174.1205,-35.2619
+"POINT (169.7975 -46.436)",1087,Nugget Point,-46.4360,169.7975,Bluff,,,2.4,2.1,1,0.5,1.5,,,09/03/1950,23/03/1950,0.05,,,,,6500,169.7975,-46.436
+"POINT (166.5273 -46.0402)",1088,Chalky Island - Sealers Bay,-46.0402,166.5273,Westport,EM5E,7.378,2.5,2,0.9,0.3,1.4,,,06/02/1994,10/03/2014,0.25,,,,,6511b,166.5273,-46.0402
+"POINT (166.6457 -45.9704)",1089,Small Craft Harbour Islands,-45.9704,166.6457,Westport,EM5M,2.91,2.4,1.9,0.8,0.2,1.3,,,06/02/1994,05/03/2014,0.25,,,,,6511c,166.6457,-45.9704
+"POINT (166.6769 -45.6006)",1091,Gilbert Islands,-45.6006,166.6769,Westport,EBMH,5.575,2.3,1.8,0.7,0.2,1.3,,,30/09/1994,04/04/1996,0.2,,,,,6512b,166.6769,-45.6006
+"POINT (166.6444 -46.0983)",1096,Coal Island - Fishing Bay,-46.0983,166.6444,Westport,,,2.4,1.8,0.8,0.4,1.4,,,04/03/1994,24/03/1994,0.07,,,,,6511,166.6444,-46.0983
+"POINT (177.6521 -37.7882)",1098,Omaio Bay - Motunui Island,-37.7882,177.6521,Tauranga,,,1.9,1.6,0.4,0.1,1,,,07/03/1995,05/04/1995,0.1,,,,,6419,177.6521,-37.7882
+"POINT (174.5258 -35.6105)",1101,Tutukaka Harbour,-35.6105,174.5258,Marsden Point,EVVK,4.325,2.3,1.9,0.8,0.3,1.4,,,20/08/1995,06/10/2006,0.1,,,,,6393,174.5258,-35.6105
+"POINT (172.9179 -43.7976)",1117,Tikao Bay,-43.7976,172.9179,Lyttelton,EC4Y,5.61,2.6,2.2,0.9,0.6,1.5,,,03/03/1953,14/02/2008,0.05,,,,,6491,172.9179,-43.7976
+"POINT (173.2566 -35.0379)",1120,Dairy Factory Wharf,-35.0379,173.2566,Marsden Point,,,2.3,1.8,0.6,0.1,1.2,,,03/12/1979,18/12/1979,0.05,,,,,6388b,173.2566,-35.0379
+"POINT (173.5052 -35.392)",1138,Rawene,-35.3920,173.5052,Port Taranaki,EBWC,4.284,3.5,2.7,1,0.1,1.9,,,18/11/1965,17/11/2015,0.2,,,,,6381a,173.5052,-35.392
+"POINT (173.5467 -35.359)",1146,Kohukohu,-35.3590,173.5467,Port Taranaki,B1F5,4.772,3.6,2.8,1,0.1,1.9,,,04/09/2015,17/11/2015,0.2,,,,,6382,173.5467,-35.359
+"POINT (175.3196 -36.1431)",1161,Nagle Cove,-36.1431,175.3196,Marsden Point,EBMY,3.305,2.6,2.2,1,0.4,1.5,,,07/12/2008,22/02/2009,0.2,,,,,6406,175.3196,-36.1431
+"POINT (173.4244 -35.4192)",1163,Te Karaka,-35.4192,173.4244,Port Taranaki,EVXC,5.314,3.2,2.5,0.9,0.1,1.7,,,03/09/2015,17/11/2015,0.25,,,,,6381b,173.4244,-35.4192
+"POINT (175.3357 -36.4839)",1178,Port Jackson,-36.4839,175.3357,Marsden Point,EEF3,3.367,2.6,2.1,0.8,0.2,1.4,,,03/11/1964,21/07/2009,0.1,,,,,6408,175.3357,-36.4839
+"POINT (174.127 -41.2407)",1201,East Bay,-41.2407,174.1270,Picton,EX4J,2.375,1.5,1,0.5,0,0.8,,,22/10/2016,09/02/2017,0.3,,,,,6476,174.127,-41.2407
+"POINT (174.2791 -41.1193)",1207,Long Island,-41.1193,174.2791,Picton,EX4P,2.799,1.6,1.1,0.6,0.1,0.8,,,17/10/2016,09/02/2017,0.3,,,,,6474,174.2791,-41.1193
+"POINT (174.6015 -41.0672)",1236,Fishermans Rock,-41.0672,174.6015,Picton,,,1.5,1,0.5,0,0.7,,,,,,,,,,6480,174.6015,-41.0672
+"POINT (187.7783 -13.7381)",1230,Salelologa,-13.7381,-172.2217,Apia,,,,,,,,,,01/11/2008,30/11/2008,,,,,,,187.7783,-13.7381
+"POINT (187.9552 -13.8475)",1232,Mulifanua,-13.8475,-172.0448,Apia,,,,,,,,,,01/11/2008,30/11/2008,,,,,,6683,187.9552,-13.8475
+"POINT (174.2795 -41.2619)",1246,Lucky Bay,-41.2619,174.2795,Lyttelton,,,1.3,1.2,0.5,0.4,0.9,,,01/10/1956,30/10/1956,0.1,,,,,6481,174.2795,-41.2619
+"POINT (175.0089 -40.8728)",1283,Waikanae River Entrance,-40.8728,175.0089,Port Taranaki,,,1.9,1.2,0.6,0,0.9,,,21/07/1992,01/09/1992,0.1,,,,,6444,175.0089,-40.8728
+"POINT (174.2282 -38.9878)",1287,Waitara River Entrance,-38.9878,174.2282,Port Taranaki,,,3.5,2.9,1.1,0.4,2,,,,,,,,,,6367,174.2282,-38.9878
+"POINT (174.0404 -41.0152)",1290,Whakatahuri,-41.0152,174.0404,Nelson,,,2.7,2.1,1.1,0.5,1.6,,,01/11/1988,23/11/1988,0.1,,,,,6468,174.0404,-41.0152
+"POINT (173.2545 -35.0033)",1297,Unahi Jetty,-35.0033,173.2545,Marsden Point,,,2.3,1.9,0.6,0.2,1.3,,,21/02/1977,07/03/1977,0.05,,,,,6388c,173.2545,-35.0033
+"POINT (177.9076 -37.6162)",1326,Waihau Bay,-37.6162,177.9076,Tauranga,,,,,,,,,,09/11/1978,10/12/1978,0.1,,,,,,177.9076,-37.6162
+"POINT (178.679 -16.6161)",1327,Galoa Island,-16.6161,178.6790,,,,,,,,,,,,,,,,,,6735,178.679,-16.6161
+"POINT (166.7384 -46.0194)",1336,Jane Coves,-46.0194,166.7384,Westport,EM5C,4.361,2.5,2,0.8,0.3,1.4,,,08/12/2013,07/03/2014,0.3,,,,,6511d,166.7384,-46.0194
+"POINT (166.148 -50.7366)",1346,Hanfield Inlet,-50.7366,166.1480,,,,,,,,,,,06/02/1991,23/02/1991,0.05,,,,,,166.148,-50.7366
+"POINT (174.8392 -41.1246)",1364,Porirua,-41.1246,174.8392,Port Taranaki,,,,,,,,,,24/02/2009,06/05/2009,0.25,,,,,,174.8392,-41.1246
+"POINT (174.9002 -41.1052)",1365,Pauatahanui,-41.1052,174.9002,Port Taranaki,,,,,,,,,,23/02/2009,06/05/2009,0.25,,,,,,174.9002,-41.1052
+"POINT (174.3626 -35.7865)",1369,Limestone Wharf,-35.7865,174.3626,Marsden Point,RSJ in conc,4.748,,,,,,,,08/01/2009,25/03/2009,0.25,,,,,,174.3626,-35.7865
+"POINT (176.1753 -37.6597)",1399,Sulphur Point,-37.6597,176.1753,Tauranga,,,,,,,,,,01/01/2012,31/03/2013,1.2,Port of Tauranga,,,,,176.1753,-37.6597
+"POINT (165.9264 -50.8289)",1403,Western Harbour,-50.8289,165.9264,Bluff,EU71,4.905,1.9,1.4,0.7,0.2,1.1,,,17/01/2015,21/03/2015,0.2,,,,,,165.9264,-50.8289
+"POINT (166.2042 -50.8186)",1404,Waterfall Inlet,-50.8186,166.2042,Bluff,EU6J,2.239,1.8,1.4,0.7,0.2,1.1,,,18/01/2015,22/03/2015,0.2,,,,,,166.2042,-50.8186
+"POINT (166.1308 -50.7064)",1405,Smith Harbour,-50.7064,166.1308,Bluff,AI01,2.082,1.7,1.3,0.7,0.2,1,,,18/01/2015,25/03/2015,0.2,,,,,,166.1308,-50.7064
+"POINT (166.2114 -50.6017)",1406,Haskell Bay,-50.6017,166.2114,Bluff,EVGA,2.75,1.7,1.3,0.7,0.2,1,,,25/01/2015,25/03/2015,0.2,,,,,,166.2114,-50.6017
+"POINT (174.3812 -35.4348)",1412,Taiwawe Bay,-35.4348,174.3812,Marsden Point,ERYQ,4.589,2.5,2,0.8,0.3,1.4,,,09/10/2015,22/11/2015,0.15,,,,,6392a,174.3812,-35.4348
+"POINT (173.443 -34.9251)",1414,Doubtless Bay,-34.9251,173.4430,Marsden Point,,,,,,,,,,03/09/2015,29/10/2015,0.15,,,,,,173.443,-34.9251
+"POINT (173.4043 -34.8225)",1416,Maitai Bay,-34.8225,173.4043,Marsden Point,EVWH,4.751,2.5,2.1,0.8,0.3,1.4,,,04/08/2015,28/10/2015,0.3,,,,,6388e,173.4043,-34.8225
+"POINT (185.8802 -18.683)",1366,Hunga,-18.6830,-174.1198,Apia,,,,,,,,,,24/09/2008,04/11/2008,0.1,,,,,,185.8802,-18.683
+"POINT (185.0433 -21.3383)",1432,Eua Island,-21.3383,-174.9567,,Eua Pin 1,2.458,1.2,1,0.3,0.1,0.7,,,20/08/2018,22/12/2018,0.3,,,,,,185.0433,-21.3383
+"POINT (185.19 -20.2733)",1433,Nomuka Iki,-20.2733,-174.8100,,Nomuka Pin 1,2.81,1.4,1.1,0.4,0,0.7,,,24/08/2018,20/12/2018,0.3,,,,,,185.19,-20.2733
+"POINT (185.285 -19.9417)",1434,Ha'afeva,-19.9417,-174.7150,,Ha'afeva Pin 1,2.013,1.4,1.2,0.4,0.1,0.7,,,28/08/2019,20/12/2018,0.25,,,,,,185.285,-19.9417
+"POINT (184.9167 -19.7083)",1436,Tofua,-19.7083,-175.0833,,,,1.3,1.1,0.3,0,0.7,,,05/09/2018,18/12/2018,0.25,,,,,,184.9167,-19.7083
+"POINT (174.1525 -41.3469)",1466,Karaka Bay,-41.3469,174.1525,Wellington,EW7C,3.847,1.9,1.5,0.9,0.6,1.2,,,04/08/2020,19/09/2020,0.15,,,,,6481a,174.1525,-41.3469
+"POINT (177.1919 -37.5269)",1002,Whakaari / White Island,-37.5269,177.1919,Tauranga,F31D,6.31,2,1.6,0.5,0.2,1.1,,,10/08/2018,30/09/2018,0.15,,,,,6417a,177.1919,-37.5269
+"POINT (177.0851 -39.6429)",1307,Cape Kidnappers / Te Kauwae-a-Māui,-39.6429,177.0851,Napier,,,,,,,,,,,,,,,,,6432a,177.0851,-39.6429
+"POINT (174.8882 -36.6061)",1063,Tiritiri Matangi Island,-36.6061,174.8882,Auckland,EX50,4.52,2.9,2.5,0.8,0.3,1.7,,,03/11/2016,16/02/2017,0.3,,,,,6398a,174.8882,-36.6061
+"POINT (166.609 -48.0228)",1110,Snares Islands / Tini Heke - North East Island,-48.0228,166.6090,Bluff,,3.187,1.9,1.6,0.7,0.3,1.2,,,09/01/1999,15/02/1999,0.1,,,,,6510b,166.609,-48.0228
+"POINT (166.9024 -46.5749)",1111,Solander Island / Hautere,-46.5749,166.9024,Bluff,BEEB,7.097,2.3,2,0.9,0.4,1.4,,,11/01/1999,25/02/1999,0.1,,,,,6510a,166.9024,-46.5749
+"POINT (172.1414 -34.1508)",1114,Manawatāwhi / Great Island - North West Bay,-34.1508,172.1414,Port Taranaki,,,2.4,2,0.7,0.4,1.4,,,02/05/2000,17/06/2000,0.1,,,,,6385,172.1414,-34.1508
+"POINT (175.8535 -36.9317)",1123,Tapuaetahi Bay / Boat Harbour,-36.9317,175.8535,Tauranga,EVVD,3.04,1.9,1.6,0.5,0.2,1,,,15/11/1978,16/12/1978,0.1,,,,,6411a,175.8535,-36.9317
+"POINT (174.8187 -36.4297)",1124,Bon Accord Harbour - Mansion House Bay,-36.4297,174.8187,Auckland,E2KK,3.432,2.9,2.4,0.9,0.4,1.7,,,22/03/1975,17/06/2017,0.3,,,,,6397,174.8187,-36.4297
+"POINT (167.8844 -46.3765)",1128,Colac Bay / Ōraka,-46.3765,167.8844,Bluff,,,2.3,1.8,0.9,0.4,1.3,,,17/01/1951,31/01/1951,0.05,,,,,6506,167.8844,-46.3765
+"POINT (173.8096 -40.8587)",1136,Greville Harbour / Wharariki,-40.8587,173.8096,Nelson,,,3.8,2.9,1.5,0.6,2.2,,,24/01/1957,22/02/1957,0.1,,,,,6462,173.8096,-40.8587
+"POINT (173.5356 -34.9884)",1149,Mangōnui,-34.9884,173.5356,Marsden Point,A068,4.415,2.6,2.2,0.9,0.5,1.6,,,20/11/1973,26/05/2015,0.2,,,,,6389,173.5356,-34.9884
+"POINT (174.7674 -36.7644)",1151,Milford - Hauraki Gulf,-36.7644,174.7674,Auckland,,,,,,,,,,16/06/1981,20/07/1981,0.1,,,,,,174.7674,-36.7644
+"POINT (173.8052 -40.9714)",1155,Waikawa Bay,-40.9714,173.8052,Nelson,,,3.9,3.1,1.4,0.6,2.3,,,,,0.005,,,,,6466a,173.8052,-40.9714
+"POINT (174.8546 -41.0745)",1177,Karehana Bay,-41.0745,174.8546,Port Taranaki,BB3U,2.994,1.7,1.1,0.9,0.3,1,,,06/03/2003,06/05/2009,0.25,,,,,6443a,174.8546,-41.0745
+"POINT (174.0031 -40.674)",1187,Stephens Island / Takapourewa,-40.6740,174.0031,Nelson,,,2.8,2.3,1.1,0.6,1.7,,,,,0.005,,,,,6464,174.0031,-40.674
+"POINT (169.1525 -52.5506)",1194,Campbell Island / Motu Ihupuku - Perserverance Harbour,-52.5506,169.1525,Bluff,,,1.7,1.4,0.9,0.6,1.2,,,10/02/1985,12/02/1985,0.01,,,,,6532,169.1525,-52.5506
+"POINT (166.2717 -50.54)",1195,Ranui Cove,-50.5400,166.2717,Bluff,EU6P,1.697,1.5,1.1,0.7,0.3,0.9,,,19/01/2015,28/03/2015,0.2,,,,,,166.2717,-50.54
+"POINT (176.4234 -40.5987)",1213,Ākitio River Entrance,-40.5987,176.4234,Napier,,,,,,,,,,,,,,,,,6435,176.4234,-40.5987
+"POINT (173.9068 -41.0743)",1237,Wilson Bay,-41.0743,173.9068,Nelson,R4U5,3.988,2.9,2.1,1.1,0.5,1.6,,,11/11/2019,05/06/2020,0.7,,,,,6468c,173.9068,-41.0743
+"POINT (173.2662 -34.9977)",1260,Omaia Island,-34.9977,173.2662,Marsden Point,,,2.3,2,0.5,0.2,1.3,,,,,0.001,,,,,6388a,173.2662,-34.9977
+"POINT (176.8714 -40.1068)",1272,Pourerere,-40.1068,176.8714,Napier,,,,,,,,,,,,,,,,,6433,176.8714,-40.1068
+"POINT (174.4439 -36.8961)",1302,Te Henga / Bethells Beach,-36.8961,174.4439,Onehunga,,,,,,,,,,,,,,,,,6375d,174.4439,-36.8961
+"POINT (173.792 -41.1678)",1324,Nydia Bay,-41.1678,173.7920,Nelson,F4VC,17.954,3,2.1,1.1,0.4,1.6,,,18/01/2020,27/02/2020,0.1,,,,,6468a,173.792,-41.1678
+"POINT (173.3858 -35.5344)",1408,Ōmāpere,-35.5344,173.3858,Port Taranaki,EVXB,5.466,2.9,2.3,0.8,0.1,1.6,,,08/09/2015,17/11/2015,0.2,,,,,6380c,173.3858,-35.5344
+"POINT (174.8281 -36.7792)",1426,McKenzie Bay,-36.7792,174.8281,Auckland,EX4U,4.81,3.1,2.6,0.9,0.4,1.7,,,02/11/2016,16/02/2017,0.3,,,,,6400a,174.8281,-36.7792
+"POINT (174.202 -41.3108)",1427,Ōraumoa / Fighting Bay,-41.3108,174.2020,Picton,,,,,,,,,,,,,,,,,,174.202,-41.3108
+"POINT (174.06 -41.3883)",1431,Pukatea / Whites Bay,-41.3883,174.0600,Lyttelton,EVVQ,4.69,1.4,0.9,0.2,0,0.6,,,10/01/2018,10/02/2018,0.1,,,,,6482a,174.06,-41.3883
+"POINT (174.0234 -40.9104)",1435,Paparoa Point,-40.9104,174.0234,Nelson,F4U4,4.49,2.6,1.9,1,0.4,1.4,,,12/11/2019,09/02/2020,0.3,,,,,6454a,174.0234,-40.9104
+"POINT (166.5533 -45.7067)",1438,Pigeon Island,-45.7067,166.5533,Westport,F3C8,2.657,2.3,1.7,0.8,0.2,1.2,,,13/02/2019,28/03/2019,0.15,,,,,6512c,166.5533,-45.7067
+"POINT (174.6831 -37.1424)",1441,Clarks Beach,-37.1424,174.6831,Onehunga,EW64,6.057,4.4,3.5,1.6,0.6,2.6,,,02/08/2019,14/09/2019,0.15,,,,,6374c,174.6831,-37.1424
+"POINT (173.9909 -41.132)",1446,Elie Bay,-41.1320,173.9909,Nelson,F66M,4.109,2.8,2.1,1.1,0.4,1.6,,,16/11/2019,04/06/2020,0.7,,,,,6467c,173.9909,-41.132
+"POINT (172.0283 -41.395)",1451,Little Wanganui,-41.3950,172.0283,Westport,EW78,5.793,3.8,2.9,1.5,0.6,2.2,,,10/02/2020,20/03/2020,0.15,,,,,6527c,172.0283,-41.395
+"POINT (174.0539 -41.4866)",1452,Wairau River Entrance,-41.4866,174.0539,Lyttelton,EW7A,2.161,1.8,1.4,0.8,0.4,1.1,,,25/02/2020,23/06/2020,0.4,,,,,6483,174.0539,-41.4866
+"POINT (173.7992 -40.9321)",1453,Coppermine Bay,-40.9321,173.7992,Nelson,F4U1,4.5,3.9,3.1,1.4,0.5,2.2,,,08/10/2019,16/01/2020,0.3,,,,,6466c,173.7992,-40.9321
+"POINT (173.8544 -40.9892)",1454,Hamilton Bay,-40.9892,173.8544,Nelson,F4UE,3.029,2.7,2,1,0.4,1.5,,,13/10/2019,17/01/2020,0.3,,,,,6465a,173.8544,-40.9892
+"POINT (174.0543 -40.9766)",1455,Sunday Bay,-40.9766,174.0543,Nelson,F4UB,3.478,2.6,2,1,0.4,1.4,,,11/10/2019,09/02/2020,0.4,,,,,6467a,174.0543,-40.9766
+"POINT (174.4288 -36.2713)",1456,Port Albert,-36.2713,174.4288,Port Taranaki,F4C1,5.004,3.9,3.1,1.2,0.3,2.2,,,10/03/2020,02/06/2020,0.3,,,,,6378b,174.4288,-36.2713
+"POINT (174.23 -36.1567)",1457,Pahi,-36.1567,174.2300,Port Taranaki,F4UD,4.738,3.9,3.1,1.1,0.3,2.1,,,12/03/2020,03/06/2020,0.3,,,,,6379b,174.23,-36.1567
+"POINT (173.9841 -36.1207)",1458,Raupo,-36.1207,173.9841,Port Taranaki,F4V1,3.664,3.7,2.9,1,0.2,2,,,06/03/2020,05/06/2020,0.3,,,,,6380d,173.9841,-36.1207
+"POINT (173.878 -41.1358)",1461,Yncyca,-41.1358,173.8780,Nelson,F4VD,7.667,3,2.2,1.1,0.4,1.6,,,19/01/2020,27/02/2020,0.1,,,,,6468b,173.878,-41.1358
+"POINT (173.9434 -35.0179)",1255,Motukawanui Island,-35.0179,173.9434,Marsden Point,F6A7,11.308,2.5,2,0.9,0.4,1.5,,,31/03/2021,12/05/2021,0.15,,,,,6390b,173.9434,-35.0179
+"POINT (174.6479 -41.3325)",1464,Cave Bay,-41.3325,174.6479,Wellington,EW7Q,4.526,1,0.6,0.6,0.1,0.6,,,23/01/2021,27/02/2021,0.1,,,,,6440,174.6479,-41.3325
+"POINT (174.8974 -41.4201)",1465,Orongorongo River Entrance,-41.4201,174.8974,Wellington,5338,6.439,1.8,1.3,0.6,0.5,1.1,,,23/01/2021,27/02/2021,0.1,,,,,6438a,174.8974,-41.4201
+"POINT (174.3014 -35.1931)",1467,Maunganui Bay,-35.1931,174.3014,Marsden Point,F4VK,6.733,2.5,2,0.9,0.4,1.4,,,29/03/2021,12/05/2021,0.15,,,,,6391b,174.3014,-35.1931
+"POINT (173.0993 -43.736)",1474,Le Bons Bay,-43.7360,173.0993,Lyttelton,F6AJ,4.02,2.5,1.9,0.8,0.3,1.4,,,20/09/2021,10/12/2021,0.25,,,,,6490a,173.0993,-43.736
+"POINT (173.0757 -43.0637)",1483,Motunau Beach,-43.0637,173.0757,,,,,,,,,,,04/04/2023,18/05/2023,0.15,,,,,,173.0757,-43.0637
+"POINT (174.2958 -35.2485)",1005,Whangamumu Harbour,-35.2485,174.2958,Marsden Point,,,2.1,1.9,0.6,0.2,1.2,,,04/11/1972,01/02/1973,0.05,,,,,6391c,174.2958,-35.2485
+"POINT (174.0813 -35.2722)",1008,Waitangi,-35.2722,174.0813,Marsden Point,,,2.3,2,0.6,0.4,1.4,,,,,,,,,,6390f,174.0813,-35.2722
+"POINT (174.0338 -41.1976)",1018,Portage,-41.1976,174.0338,Nelson,EFYR,3.475,2.9,2,0.8,0.1,1.4,,,18/07/1996,26/08/1996,0.1,,,,,6470,174.0338,-41.1976
+"POINT (171.1997 -42.4468)",1026,Greymouth,-42.4468,171.1997,Westport,AE40,5.032,3.4,2.6,1.3,0.7,2,,,16/02/1993,23/06/2021,0.3,,,,,6524,171.1997,-42.4468
+"POINT (174.0349 -35.1952)",1084,Doves Bay,-35.1952,174.0349,Marsden Point,F4VJ,4.463,2.5,2,0.9,0.3,1.4,,,25/03/1992,10/11/2020,0.4,,,,,6390e,174.0349,-35.1952
+"POINT (173.1171 -35.1752)",1116,Ahipara Bay,-35.1752,173.1171,Port Taranaki,F6AA,5.237,3.1,2.3,1,0.3,1.7,,,27/03/2021,11/05/2021,0.15,,,,,6384,173.1171,-35.1752
+"POINT (175.4473 -36.7879)",1130,Coromandel Harbour - Whanganui Island,-36.7879,175.4473,Auckland,DLKJ,5.795,2.9,2.3,0.7,0,1.5,,,07/10/1976,01/11/2020,0.3,,,,,6405,175.4473,-36.7879
+"POINT (173.6493 -41.0907)",1131,Croisilles Harbour - Kōtiro Point,-41.0907,173.6493,Nelson,,,3.6,3,1.2,0.7,2.1,,,03/06/1987,28/06/1987,0.05,,,,,6460,173.6493,-41.0907
+"POINT (170.169 -43.2211)",1166,Ōkārito,-43.2211,170.1690,Westport,,,2.3,1.8,0.6,0.2,1.2,,,,,,,,,,6521,170.169,-43.2211
+"POINT (168.9048 -43.9075)",1167,Okuru River Entrance,-43.9075,168.9048,Westport,,,,,,,,,,,,,,,,,,168.9048,-43.9075
+"POINT (174.4878 -39.7741)",1175,Pātea,-39.7741,174.4878,Port Taranaki,EW7D,5.483,3.2,2.1,1.1,0.1,1.6,,,19/08/2020,30/10/2020,0.25,,,,,6449,174.4878,-39.7741
+"POINT (168.1214 -46.9034)",1176,Golden Bay - Stewart Island,-46.9034,168.1214,Bluff,ED70,3.635,2.7,2.2,1.1,0.6,1.7,,,04/02/1951,17/03/2009,0.4,,,,,6507,168.1214,-46.9034
+"POINT (173.8363 -40.9294)",1183,Man-o-War Bay / Pāharakeke,-40.9294,173.8363,Nelson,F4U5,5.516,3.9,3,1.4,0.6,2.2,,,27/01/2006,16/01/2020,0.6,,,,,6466b,173.8363,-40.9294
+"POINT (168.1228 -47.1112)",1209,Lords River Entrance,-47.1112,168.1228,Bluff,,,,,,,,,,09/11/1998,18/11/1998,,,,,,,168.1228,-47.1112
+"POINT (174.6515 -41.3435)",1243,Karori Rock Light,-41.3435,174.6515,Wellington,,,,,,,,,,,,,,,,,6439a,174.6515,-41.3435
+"POINT (174.7141 -41.2188)",1248,Mākara Beach,-41.2188,174.7141,Port Taranaki,,,1.3,0.9,0.7,0.3,0.8,,,,,0.05,,,,,6442,174.7141,-41.2188
+"POINT (175.0944 -40.7308)",1264,Otaki Beach,-40.7308,175.0944,Port Taranaki,F4YC,7.082,2.3,1.7,1,0.4,1.3,,,28/04/2021,08/06/2021,0.1,,,,,6444c,175.0944,-40.7308
+"POINT (173.9833 -40.9167)",1267,Pelorus Sound / Te Hoiere Entrance,-40.9167,173.9833,Nelson,,,2.8,2.2,1.1,0.5,1.6,,,,,,,,,,6467,173.9833,-40.9167
+"POINT (173.9202 -36.0253)",1279,Te Kōpuru,-36.0253,173.9202,Port Taranaki,,,3.4,3,,,,,,,,,,,,,6380,173.9202,-36.0253
+"POINT (175.1954 -40.5469)",1288,Waitarere Beach,-40.5469,175.1954,Port Taranaki,,,,,,,,,,,,,,,,,6444d,175.1954,-40.5469
+"POINT (175.8785 -37.1999)",1295,Whangamatā,-37.1999,175.8785,Tauranga,BUGM,5.232,2,1.7,0.6,0.2,1.1,,,17/02/2000,12/04/2000,0.15,,,,,6413a,175.8785,-37.1999
+"POINT (167.5323 -44.8086)",1304,Hāwea / Bligh Sound,-44.8086,167.5323,Westport,,,2.1,1.8,0.6,0.3,1.2,,,,,,,,,,6515,167.5323,-44.8086
+"POINT (174.129 -35.158)",1320,Cape Wiwiki,-35.1580,174.1290,Marsden Point,F6A4,6.264,2.5,2,0.9,0.4,1.5,,,30/03/2021,12/05/2021,0.15,,,,,6390c,174.129,-35.158
+"POINT (175.5632 -37.1905)",1342,Waihou River Entrance,-37.1905,175.5632,Auckland,,,,,,,,,,,,,,,,,,175.5632,-37.1905
+"POINT (174.933 -40.8553)",1351,Rangatira Point,-40.8553,174.9330,Port Taranaki,F4Y7,4.049,1.9,1.2,0.7,0.1,0.9,,,01/01/2006,07/06/2021,9,,,,,6444a,174.933,-40.8553
+"POINT (174.3207 -35.3107)",1410,Ngaiotonga Bay,-35.3107,174.3207,Marsden Point,ERYX,4.709,2.5,2,0.8,0.3,1.4,,,09/10/2015,22/11/2015,0.15,,,,,6391d,174.3207,-35.3107
+"POINT (174.3283 -35.3443)",1411,Tamateatai Point,-35.3443,174.3283,Marsden Point,ERYR,3.114,2.5,2.1,0.8,0.4,1.4,,,09/10/2015,22/11/2015,0.15,,,,,6391e,174.3283,-35.3443
+"POINT (174.2782 -41.0415)",1421,Anakakata Bay,-41.0415,174.2782,Picton,EX4Q,3.272,1.7,1.1,0.5,0.1,0.8,,,23/10/2016,15/06/2017,0.7,,,,,6470c,174.2782,-41.0415
+"POINT (174.6575 -36.8612)",1443,Whau River Entrance,-36.8612,174.6575,Auckland,EW4K,4.226,3.6,3.1,1.1,0.6,2.1,,,06/05/2019,16/06/2019,0.15,,,,,6399f,174.6575,-36.8612
+"POINT (175.2288 -41.5916)",1479,Ngawi,-41.5916,175.2288,Wellington,EVQT,19.034,2.2,1.8,1,0.7,1.4,,,22/05/2022,29/06/2022,0.1,,,,,6438a,175.2288,-41.5916
+"POINT (168.3668 -46.6072)",1478,Davey Shoal,-46.6072,168.3668,Bluff,,,,,,,,,,18/01/2022,28/02/2022,0.1,,,,,,168.3668,-46.6072
+"POINT (174.2717 -41.0933)",1472,Motuara Island,-41.0933,174.2717,Picton,F6RP,2.929,1.7,1.1,0.6,0.1,0.9,,,01/12/2021,10/01/2023,1,Marlborough District Council,Vega C23 radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6470b,174.2717,-41.0933
+"POINT (174.1917 -41.25)",1473,Te Weka Bay,-41.2500,174.1917,Picton,F6AF,1.947,1.4,0.9,0.5,0.1,0.7,,,30/11/2021,10/01/2023,1,Marlborough District Council,Vega C23 radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6475,174.1917,-41.25
+"POINT (168.085666666667 -46.8368333333333)",1475,Port William / Potirepo,-46.8368,168.0857,Bluff,F6TB,5.424,2.6,2.1,1.1,0.6,1.6,,,21/01/2022,27/02/2022,0.08,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6510e,168.085666666667,-46.8368333333333
+"POINT (167.983 -46.7516666666667)",1476,Christmas Village Bay,-46.7517,167.9830,Bluff,F6T4,4.062,2.4,2,1.1,0.6,1.5,,,22/01/2022,26/02/2022,0.08,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6510d,167.983,-46.7516666666667
+"POINT (170.8549 -45.3591)",1481,Moeraki,-45.3591,170.8549,,,,,,,,,,,23/11/2022,10/01/2023,0.15,,,,,,170.8549,-45.3591
+"POINT (173.3183 -42.8708)",1484,Point Gibson,-42.8708,173.3183,,,,,,,,,,,04/04/2023,18/05/2023,0.15,,,,,,173.3183,-42.8708
+"POINT (173.6599 -41.1014)",1485,Okiwi Bay,-41.1014,173.6599,,,,,,,,,,,24/03/2022,31/07/2022,0.4,,,,,,173.6599,-41.1014
+"POINT (173.7571 -41.0487)",1486,Squally Cove,-41.0487,173.7571,,,,,,,,,,,24/03/2022,31/07/2022,0.4,,,,,,173.7571,-41.0487
+"POINT (173.7196 -41.0084)",1487,Taipare Bay,-41.0084,173.7196,,,,,,,,,,,24/03/2022,31/07/2022,0.4,,,,,,173.7196,-41.0084
+"POINT (173.8615 -40.7681)",1488,East Arm,-40.7681,173.8615,,,,,,,,,,,26/03/2022,01/08/2022,0.4,,,,,,173.8615,-40.7681
+"POINT (173.9372 -40.7446)",1489,Swamp Bay,-40.7446,173.9372,,,,,,,,,,,27/03/2022,01/08/2022,0.4,,,,,,173.9372,-40.7446
+"POINT (174.7325 -37.3853)",1179,Port Waikato,-37.3853,174.7325,Port Taranaki,,,3.7,3,1.2,0.5,2.1,,,20/12/2022,09/02/2023,0.15,,,,,6372,174.7325,-37.3853
+"POINT (168.4098 -46.6493)",1477,Dog Island No 2 ,-46.6493,168.4098,Bluff,DFH7,6.988,,,,,,,,24/01/2022,28/02/2022,0.1,,,,,,168.4098,-46.6493
+"POINT (173.7572 -35.0125)",1012,Kingfish Point,-35.0125,173.7572,Marsden Point,F4TE,7.085,2.5,2.1,0.8,0.4,1.4,,,20/04/1973,21/05/2014,0.4,,,,,6389c,173.7572,-35.0125
+"POINT (167.476 -47.2772)",1015,Flour Cask Bay,-47.2772,167.4760,Bluff,BAY5,5.269,2.8,2.4,1,0.5,1.7,,,02/02/1998,04/05/1999,0.7,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6509,167.476,-47.2772
+"POINT (173.7704 -41.2751)",1017,Havelock,-41.2751,173.7704,Nelson,BE0K,4.183,3.04,2.17,1.14,0.39,1.65,3.31,0.15,17/07/1996,30/06/2023,3.5,Port Marlborough New Zealand,Valeport LR740 pressure sensor,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6471,173.7704,-41.2751
+"POINT (167.1509 -45.4577)",1019,Deep Cove,-45.4577,167.1509,Westport,F3A1,2.435,2.3,1.7,0.8,0.2,1.3,,,15/07/1984,26/04/2019,0.7,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6513,167.1509,-45.4577
+"POINT (175.7088 -36.8326)",1022,Whitianga,-36.8326,175.7088,Tauranga,BUGN,3.186,2.13,1.83,0.77,0.43,1.3,2.38,0.14,01/01/2000,30/06/2023,14.5,Waikato Regional Council,Radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6411,175.7088,-36.8326
+"POINT (174.7855 -36.9328)",1027,Onehunga,-36.9328,174.7855,,ADLT,5.593,4.17,3.32,1.46,0.57,2.43,4.54,0.12,01/11/1987,30/06/2023,23,Auckland Council,Waterwatch LS1 Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6375,174.7855,-36.9328
+"POINT (170.5134 -45.8787)",1028,Dunedin,-45.8787,170.5134,,AFEQ,3.728,2.18,1.76,0.47,0.09,1.12,2.44,-0.13,01/01/1905,30/06/2023,99,Port Otago,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6498,170.5134,-45.8787
+"POINT (177.0034 -37.9486)",1031,Whakatāne,-37.9486,177.0034,Tauranga,AHNH,2.702,2.1,1.79,0.74,0.45,1.27,2.34,0.22,01/01/1995,30/06/2023,28.5,Bay of Plenty Regional Council,Stilling well,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6417b,177.0034,-37.9486
+"POINT (170.7183 -45.7869)",1032,Spit Wharf,-45.7869,170.7183,Port Chalmers,EAYT,5.386,2.08,1.6,0.51,0.21,1.1,2.25,0.02,20/07/1997,30/06/2023,25,Port Otago,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6496,170.7183,-45.7869
+"POINT (167.8893 -46.6935)",1041,Yankee River Entrance,-46.6935,167.8893,Bluff,BAY8,3.734,2.3,1.9,0.9,0.5,1.4,,,27/10/1981,03/07/1999,0.1,,,,,6510c,167.8893,-46.6935
+"POINT (174.0055 -41.2857)",1043,Picton,-41.2857,174.0055,,BQFK,2.716,1.59,1.05,0.59,0.12,0.84,1.72,0,01/01/1990,30/06/2023,11,Port Marlborough New Zealand,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6477,174.0055,-41.2857
+"POINT (174.8231 -38.0659)",1044,Kawhia,-38.0659,174.8231,Port Taranaki,EW67,4.075,3.71,2.93,1.28,0.47,2.12,4.08,0.07,29/01/1997,30/06/2023,15,Waikato Regional Council,Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6369,174.8231,-38.0659
+"POINT (178.3015 -37.5691)",1046,Wharekahika / Hicks Bay,-37.5691,178.3015,Gisborne,ACA3,5.468,1.9,1.6,0.5,0.2,1.1,,,06/02/1986,27/11/2018,0.5,,,,,6421,178.3015,-37.5691
+"POINT (174.0981 -41.3337)",1051,Ocean Bay,-41.3337,174.0981,Wellington,,,1.5,1.1,0.6,0.3,0.9,,,07/02/1983,07/03/1983,0.1,,,,,6482,174.0981,-41.3337
+"POINT (169.1438 -46.646)",1053,Waikawa Harbour,-46.6460,169.1438,Bluff,DJH9,12.779,2.5,2.2,0.9,0.5,1.5,,,07/12/1982,15/03/2023,0.4,,,,,6501,169.1438,-46.646
+"POINT (174.8075 -36.2883)",1054,Leigh,-36.2883,174.8075,Auckland,EM65,4.33,2.6,2.2,0.8,0.3,1.5,,,29/11/1985,26/01/2017,0.7,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6396b,174.8075,-36.2883
+"POINT (168.1307 -46.897)",1056,Halfmoon Bay / Oban,-46.8970,168.1307,Bluff,ED74,4.014,2.6,2.2,1.1,0.6,1.6,,,05/06/1982,17/03/2009,0.4,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6506c,168.1307,-46.897
+"POINT (168.0136 -46.3574)",1058,Riverton / Aparima,-46.3574,168.0136,Bluff,EC48,4.11,2.9,2.4,1.2,0.7,1.8,,,17/04/1982,30/06/2023,0.5,Southland Regional Council,Radar - Vegapuls C21,,,6505a,168.0136,-46.3574
+"POINT (168.5047 -46.7868)",1059,Ruapuke Island,-46.7868,168.5047,Bluff,,,2.7,2.3,0.9,0.5,1.6,,,03/02/1982,29/05/2023,0.45,,,,,6503a,168.5047,-46.7868
+"POINT (174.7301 -36.3887)",1060,Matakana River - Sandspit,-36.3887,174.7301,Auckland,CLQK,4.126,2.9,2.5,0.9,0.5,1.7,,,14/04/1983,15/06/2017,0.7,,,,,6397a,174.7301,-36.3887
+"POINT (173.6812 -42.4257)",1062,South Bay,-42.4257,173.6812,Lyttelton,F1U2,3.445,1.8,1.4,0.5,0.1,0.9,,,26/02/1998,20/12/2017,0.3,,,,,6487a,173.6812,-42.4257
+"POINT (167.3632 -46.2189)",1068,Port Craig,-46.2189,167.3632,Bluff,BUFV,4.509,3.1,2.6,1.3,0.7,1.9,,,02/02/1999,29/06/1999,0.3,,,,,6510f,167.3632,-46.2189
+"POINT (166.7242 -45.7401)",1092,Front Islands,-45.7401,166.7242,Westport,EBMD,2.885,2.1,1.6,0.5,0,1,,,01/10/1994,27/03/2019,0.1,,,,,6512a,166.7242,-45.7401
+"POINT (166.5192 -45.7686)",1099,Many Islands,-45.7686,166.5192,Westport,F3CC,2.525,2.3,1.7,0.7,0.2,1.2,,,14/10/1994,28/03/2019,0.3,,,,,6512,166.5192,-45.7686
+"POINT (178.3378 -38.3786)",1100,Cooks Cove,-38.3786,178.3378,Gisborne,BM CC 1/96,4.07,1.7,1.6,0.4,0.3,1,,,20/02/1987,25/03/1996,0.2,,,,,6424,178.3378,-38.3786
+"POINT (177.1082 -37.984)",1102,Port Ōhope Wharf,-37.9840,177.1082,Tauranga,F4BN,4.334,1.9,1.6,0.4,0.1,1.1,2.17,-0.1,25/06/1998,30/06/2023,25,Bay of Plenty Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6418,177.1082,-37.984
+"POINT (177.2819 -38.0014)",1104,Ōpōtiki Wharf,-38.0014,177.2819,Tauranga,,,1.8,1.48,0.42,0.16,0.95,1.98,-0.06,01/08/1990,30/06/2023,30,Bay of Plenty Regional Council,Pressure transducer,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6418a,177.2819,-38.0014
+"POINT (174.35 -35.7574)",1108,Whangārei,-35.7574,174.3500,Marsden Point,A2Q9,5.182,3.07,2.6,1.05,0.54,1.83,3.38,0.19,01/04/1987,31/01/2007,7,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6395,174.35,-35.7574
+"POINT (173.1557 -34.8238)",1112,Houhora Harbour Entrance,-34.8238,173.1557,Marsden Point,IT_DML_2,3.88,2.6,2.2,0.9,0.5,1.5,,,29/03/1969,15/05/1969,0.1,,,,,6387d,173.1557,-34.8238
+"POINT (169.5833 -43.5833)",1125,Bruce Bay,-43.5833,169.5833,Westport,B8J8,9.373,2.9,2.4,1.1,0.5,1.7,,,14/04/2022,20/06/2022,0.2,,,,,6520,169.5833,-43.5833
+"POINT (178.5445 -37.6806)",1133,East Cape,-37.6806,178.5445,Gisborne,,,2.1,1.9,0.7,0.5,1.3,,,,,0.05,,,,,6422,178.5445,-37.6806
+"POINT (175.7738 -36.6017)",1140,Huruhi Harbour,-36.6017,175.7738,Tauranga,EG02,2.734,2.5,1.95,0.83,0.26,1.38,2.6,0.15,29/09/2009,15/03/2011,1,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6410,175.7738,-36.6017
+"POINT (168.3363 -46.4187)",1141,Waihopai River Entrance,-46.4187,168.3363,Bluff,,,,,,,,,,01/01/1993,30/06/2023,30,Southland Regional Council,Radar,,,,168.3363,-46.4187
+"POINT (175.1576 -36.7851)",1147,Man o'War Bay,-36.7851,175.1576,Auckland,EX5N,4.857,3.2,2.6,0.9,0.3,1.8,,,04/11/1968,07/03/2017,0.4,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6401,175.1576,-36.7851
+"POINT (175.2376 -40.4724)",1148,Manawatū River Entrance,-40.4724,175.2376,Port Taranaki,EW7X,3.08,2,1.4,0.7,0.2,1,,,14/07/1993,28/07/2020,25,Horizons Regional Council,Hyquest shaft encoded float and counterweight,,,6445,175.2376,-40.4724
+"POINT (174.9915 -36.78)",1150,Matiatia Bay,-36.7800,174.9915,Auckland,EX5J,4.518,3.1,2.6,0.9,0.4,1.7,,,11/09/1968,07/03/2017,0.4,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6401a,174.9915,-36.78
+"POINT (174.6274 -38.6998)",1154,Mokau River Entrance,-38.6998,174.6274,Port Taranaki,EW7L,4.074,2.5,1.8,0.7,0.2,1.2,,,21/07/2009,02/11/2020,1.4,,,,,6368,174.6274,-38.6998
+"POINT (175.1111 -35.9074)",1156,Burgess Island (Pokohinu),-35.9074,175.1111,Marsden Point,ECPX,4.628,2.4,2,0.8,0.4,1.4,,,08/02/2009,24/03/2009,0.1,,,,,6396,175.1111,-35.9074
+"POINT (176.185 -37.6317)",1158,Moturiki Island,-37.6317,176.1850,Tauranga,AB5A,6.663,2,1.68,0.58,0.23,1.13,2.24,-0.01,27/05/1971,30/06/2023,16,NIWA,Float gauge within stilling well,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6414d,176.185,-37.6317
+"POINT (170.975 -45.1056)",1164,Oamaru,-45.1056,170.9750,Port Chalmers,CQGA,5.001,2.3,1.93,0.82,0.51,1.4,2.5,0.3,23/06/2000,17/07/2001,1,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6494,170.975,-45.1056
+"POINT (173.8559 -39.4606)",1172,Ōpunake Bay,-39.4606,173.8559,Port Taranaki,A7DR,39.901,3.6,2.5,1.2,0.2,1.9,,,20/08/2020,30/10/2020,0.2,,,,,6451,173.8559,-39.4606
+"POINT (172.923 -34.5163)",1174,Te Hāpua,-34.5163,172.9230,Marsden Point,,,2.5,2.1,0.7,0.4,1.4,,,,,0.005,,,,,6387,172.923,-34.5163
+"POINT (183.7325 -43.7319)",1374,Kaingaroa - Chatham Island,-43.7319,-176.2675,Lyttelton,EHN6,3.267,1.48,1.19,0.39,0.07,0.79,1.54,0.02,02/05/2002,05/06/2013,8,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6536a,183.7325,-43.7319
+"POINT (183.7612 -44.2398)",1400,Flower Pot (Onoua) - Pitt Island (Rangiauria),-44.2398,-176.2388,Lyttelton,EHN9,3.291,1,0.8,0.2,0,0.5,,,02/12/2010,13/04/2011,0.3,,,,,6535a,183.7612,-44.2398
+"POINT (174.8795 -37.7942)",1180,Raglan,-37.7942,174.8795,Port Taranaki,AGE6,5.06,3.39,2.65,0.98,0.18,1.85,3.67,0.12,28/01/2005,30/06/2023,11,Waikato Regional Council,Radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6371,174.8795,-37.7942
+"POINT (175.9364 -37.0481)",1185,Slipper Island (Whakahau),-37.0481,175.9364,Tauranga,,,2,1.8,0.5,0.4,1.2,,,10/10/1970,12/02/1971,0.1,,,,,6412a,175.9364,-37.0481
+"POINT (172.8975 -40.8227)",1189,Tarakohe,-40.8227,172.8975,Nelson,C7L6,6.359,3.93,2.99,1.48,0.6,2.23,4.45,0.06,01/07/1984,01/05/2023,21.5,Tasman District Council,Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6452,172.8975,-40.8227
+"POINT (166.7654 -45.5937)",1199,Beach Harbour,-45.5937,166.7654,Westport,,,,,,,,,,,,0.001,,,,,,166.7654,-45.5937
+"POINT (178.3224 -38.3789)",1204,Tolaga Bay Wharf,-38.3789,178.3224,Gisborne,F6FH,3.358,1.6,1.4,0.3,0.1,1.3,,,01/04/2022,14/05/2022,0.15,,,,,6423b,178.3224,-38.3789
+"POINT (173.1022 -41.2565)",1206,Māpua,-41.2565,173.1022,Nelson,B9GP,5.451,4.1,3.28,1.55,0.62,2.43,4.44,0.18,08/05/1986,01/03/1994,7,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6455b,173.1022,-41.2565
+"POINT (175.5216 -37.128)",1233,Thames,-37.1280,175.5216,Auckland,A6BM,4.988,3.55,2.97,0.97,0.35,1.96,3.91,-0.08,25/05/1990,30/06/2023,34,Waikato Regional Council,Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6404,175.5216,-37.128
+"POINT (174.4419 -36.6739)",1239,Helensville,-36.6739,174.4419,Port Taranaki,ABQA,6.369,3.94,3.23,1.21,0.47,2.24,4.27,0.1,30/06/2020,30/06/2023,3,Auckland Council,Waterwatch LS1 Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6378a,174.4419,-36.6739
+"POINT (174.9507 -40.8325)",1241,Waiorua Bay,-40.8325,174.9507,Port Taranaki,F4Y3,6.939,2,1.4,0.8,0.2,1.1,,,24/04/2021,09/06/2021,0.15,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6444b,174.9507,-40.8325
+"POINT (174.3113 -41.2016)",1258,Ōkukari Bay,-41.2016,174.3113,Picton,EX4M,7.026,1.2,0.8,0.5,0.1,0.7,,,15/04/1977,10/01/2023,2,Marlborough District Council,Vega C23 radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6479a,174.3113,-41.2016
+"POINT (176.045 -37.6601)",1261,Ōmokoroa,-37.6601,176.0450,Tauranga,AB4B,2.715,2.01,1.72,0.55,0.21,1.15,2.22,-0.01,01/01/2000,30/06/2023,11.5,Bay of Plenty Regional Council,Radar,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6414b,176.045,-37.6601
+"POINT (176.6921 -40.2635)",1269,Pōrangahau River Entrance,-40.2635,176.6921,Napier,,,,,,,,,,,,,,,,,6433a,176.6921,-40.2635
+"POINT (178.3428 -38.0382)",1285,Waipiro Bay,-38.0382,178.3428,Tauranga,EJXX,12.644,2.1,1.8,0.8,0.5,1.3,,,15/05/2022,27/06/2022,0.1,,,,,6423,178.3428,-38.0382
+"POINT (174.7268 -36.6402)",1291,Weiti River Entrance,-36.6402,174.7268,Auckland,EB2G,3.97,3.08,2.59,1.02,0.51,1.8,3.41,0.17,28/01/1976,30/06/2023,5,Auckland Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6399,174.7268,-36.6402
+"POINT (171.8078 -44.0515)",1298,Ashburton River / Hakatere Entrance,-44.0515,171.8078,Timaru,,,,,,,,,,,,,,,,,6491b,171.8078,-44.0515
+"POINT (177.0237 -39.8304)",1300,Te Motu-o-Kura / Bare Island,-39.8304,177.0237,Napier,F4YG,4.295,1.7,1.4,0.5,0.2,0.9,,,04/04/2022,13/05/2022,0.1,,,,,6432b,177.0237,-39.8304
+"POINT (175.2872 -41.6131)",1308,Cape Palliser / Mātakitaki-a-Kupe,-41.6131,175.2872,Wellington,,,1.5,1.4,0.5,0.3,0.9,,,,,,,,,,6438,175.2872,-41.6131
+"POINT (172.6503 -34.4775)",1309,Cape Maria van Diemen,-34.4775,172.6503,Port Taranaki,,,2.4,2.1,0.6,0.3,1.4,,,18/03/2023,16/05/2023,0.2,,,,,6386,172.6503,-34.4775
+"POINT (176.6159 -40.4914)",1311,Cape Turnagain,-40.4914,176.6159,Napier,F4YD,6.079,1.8,1.4,0.6,0.1,0.9,,,24/10/2021,30/11/2021,0.1,,,,,6434,176.6159,-40.4914
+"POINT (174.8678 -41.1001)",1323,Mana Marina,-41.1001,174.8678,Port Taranaki,C1K1,2.55,1.79,1.25,0.98,0.51,1.1,1.93,0.41,19/03/1965,30/06/2023,14,Wellington Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6443,174.8678,-41.1001
+"POINT (178.3181 -38.132)",1325,Tokomaru Bay,-38.1320,178.3181,Gisborne,,,1.9,1.8,0.6,0.5,,,,,,,,,,,6423a,178.3181,-38.132
+"POINT (167.9265 -44.6682)",1330,Fresh Water Basin,-44.6682,167.9265,Westport,EB2M,3.967,2.49,2,0.83,0.32,1.41,2.72,0.11,17/05/1996,30/06/2023,13,Southland Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6517,167.9265,-44.6682
+"POINT (173.0225 -41.0472)",1349,Kaiteriteri,-41.0472,173.0225,Nelson,EW6B,7.956,3.97,2.96,1.35,0.4,2.15,4.38,-0.03,16/06/2000,01/05/2023,22,Tasman District Council,Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6456,173.0225,-41.0472
+"POINT (173.1191 -34.8139)",1350,Pukenui Wharf,-34.8139,173.1191,Marsden Point,EAUA,13.399,2.7,2.2,0.9,0.5,1.6,,,08/04/2015,26/05/2015,0.15,,,,,6387c,173.1191,-34.8139
+"POINT (168.4112 -46.6526)",1353,Dog Island,-46.6526,168.4112,Bluff,DFH7,6.988,2.98,2.52,1.22,0.69,1.87,3.32,0.34,02/02/1997,30/06/2023,26.5,NIWA,Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6503,168.4112,-46.6526
+"POINT (170.3866 -45.9521)",1354,Green Island,-45.9521,170.3866,Bluff,,,2.06,1.72,0.45,0.12,1.09,2.25,-0.07,04/12/2002,22/07/2022,17.5,"Otago Regional Council, NIWA",Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6499,170.3866,-45.9521
+"POINT (172.959 -43.8087)",1356,Akaroa,-43.8087,172.9590,Lyttelton,C82L,3.47,2.7,2.1,0.9,0.4,1.5,,,24/10/2007,04/04/2008,0.5,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6490b,172.959,-43.8087
+"POINT (172.7714 -43.571)",1370,Sumner Head,-43.5710,172.7714,Lyttelton,,,2.47,2,0.73,0.32,1.37,2.62,0.15,03/06/1994,30/06/2023,29,"NIWA, Environment Canterbury",Bubbler,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6488,172.7714,-43.571
+"POINT (174.4518 -36.9295)",1372,Anawhata,-36.9295,174.4518,Onehunga,,,3.21,2.51,1.06,0.34,1.79,3.5,0.07,19/11/1998,31/12/2006,8,,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6375c,174.4518,-36.9295
+"POINT (174.8145 -37.8219)",1396,Manu Bay,-37.8219,174.8145,Port Taranaki,EW6R,6.531,3.45,2.64,1.2,0.44,1.94,3.8,0.05,11/01/2012,30/06/2023,6.5,Waikato Regional Council,,,,6372a,174.8145,-37.8219
+"POINT (176.4133 -37.7556)",1397,Kaituna River Entrance,-37.7556,176.4133,Tauranga,F34Y,3.496,1.55,1.27,0.36,0.18,0.81,1.72,-0.03,01/01/2000,30/06/2023,24,Bay of Plenty Regional Council,,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6415b,176.4133,-37.7556
+"POINT (176.8741 -37.9172)",1398,Rangitaiki River Entrance,-37.9172,176.8741,Tauranga,,,1.56,1.2,0.39,0.24,0.8,1.75,0.08,01/01/2000,30/06/2023,24,Bay of Plenty Regional Council,,,,6416a,176.8741,-37.9172
+"POINT (173.7792 -34.9644)",1402,Stephenson Island,-34.9644,173.7792,Marsden Point,F4TF,3.976,2.5,2.1,0.8,0.4,1.4,,,11/02/2014,22/05/2014,0.3,,,,,6389b,173.7792,-34.9644
+"POINT (172.7741 -43.6135)",1460,Purau Lead,-43.6135,172.7741,Lyttelton,,,,,,,,,,15/04/2019,30/06/2023,4.2,Lyttelton Port Christchurch,Radar,,,,172.7741,-43.6135
+"POINT (174.0583 -35.1852)",1413,Te Puna Inlet,-35.1852,174.0583,Marsden Point,,,,,,,,,,04/04/2013,13/04/2013,0.005,,,,,,174.0583,-35.1852
+"POINT (173.1732 -34.8045)",1415,Farmer Point,-34.8045,173.1732,Marsden Point,EVWA,5.353,2.6,2.1,0.8,0.3,1.5,,,03/08/2015,29/10/2015,0.3,,,,,6387b,173.1732,-34.8045
+"POINT (173.556 -34.928)",1417,Takerau Bay,-34.9280,173.5560,Marsden Point,EVWD,6.997,2.5,2.1,0.8,0.3,1.5,,,02/08/2015,27/10/2015,0.3,,,,,6389a,173.556,-34.928
+"POINT (172.923 -34.5165)",1418,Te Hāpua,-34.5165,172.9230,Marsden Point,TH_BM2,3.717,2.6,2.2,0.9,0.4,1.5,,,04/02/2016,10/03/2016,0.1,,,,,6387,172.923,-34.5165
+"POINT (172.9441 -34.5347)",1419,Akatarere Point,-34.5347,172.9441,Marsden Point,EWVB,5.904,2.5,2.2,0.9,0.4,1.5,,,03/02/2016,10/03/2016,0.1,,,,,6387a,172.9441,-34.5347
+"POINT (175.1832 -36.897)",1424,Sandspit Passage,-36.8970,175.1832,Auckland,EX5U,3.869,3.3,2.7,0.9,0.3,1.8,,,07/11/2016,07/03/2017,0.4,,,,,6402a,175.1832,-36.897
+"POINT (174.9526 -36.7262)",1425,Rakino Island,-36.7262,174.9526,Auckland,EX4T,4.572,3,2.5,0.9,0.3,1.7,,,10/11/2016,06/03/2017,0.4,,,,,6399b,174.9526,-36.7262
+"POINT (174.0153 -42.0043)",1428,Kekerengu,-42.0043,174.0153,Lyttelton,AE3W,11.72,1.8,1.3,0.4,0,0.9,,,10/11/2017,17/12/2017,0.1,,,,,6486,174.0153,-42.0043
+"POINT (173.8322 -42.2458)",1429,Ōhau Point,-42.2458,173.8322,Lyttelton,F1TT,8.372,1.7,1.2,0.3,0,0.8,,,09/11/2017,17/12/2017,0.1,,,,,6486a,173.8322,-42.2458
+"POINT (173.4553 -42.639)",1430,Conway Flat,-42.6390,173.4553,Lyttelton,F1U4,6.912,1.8,1.3,0.4,0,0.8,,,09/11/2017,16/12/2017,0.1,,,,,6487b,173.4553,-42.639
+"POINT (173.2949 -34.8902)",1437,Kotiatia Point,-34.8902,173.2949,Marsden Point,EVW5,5.347,2.5,2.1,0.9,0.4,1.5,,,28/11/1979,28/10/2015,0.4,,,,,6388,173.2949,-34.8902
+"POINT (173.9883 -41.0146)",1445,Richmond Bay,-41.0146,173.9883,Nelson,R4U1,3.424,2.8,2,1.1,0.4,1.5,,,07/11/2019,04/06/2020,0.7,,,,,6467b,173.9883,-41.0146
+"POINT (172.6689 -40.494)",1450,Cape Farewell,-40.4940,172.6689,Westport,EW70,7.255,3.6,2.9,1.2,0.5,2.1,,,12/04/2020,22/06/2020,0.25,,,,,6528a,172.6689,-40.494
+"POINT (174.7643 -36.3409)",1462,Omaha,-36.3409,174.7643,Auckland,E2KF,,,,,,,,,30/06/2020,30/06/2023,3,Auckland Council,Waterwatch LS1 Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,,174.7643,-36.3409
+"POINT (174.8608 -36.9069)",1463,Tamaki River,-36.9069,174.8608,Auckland,BD1X,9.521,3.4,2.86,1.13,0.58,1.99,3.75,0.21,30/06/2020,30/06/2023,3,Auckland Council,Waterwatch LS1 Ultrasonic,https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions,,6401c,174.8608,-36.9069
+"POINT (177.8909 -39.0111)",1470,Happy Jacks Boat Harbour,-39.0111,177.8909,Gisborne,DMU1,3.708,2,1.7,0.8,0.5,1.3,,,08/03/2022,16/05/2022,0.2,,,,,6427,177.8909,-39.0111
+"POINT (177.8275 -39.1609)",1471,Long Point / Taramahiti Point,-39.1609,177.8275,Napier,F6FD,4.566,1.8,1.4,0.4,0.1,0.9,,,19/10/2021,02/12/2021,0.1,,,,,6428a,177.8275,-39.1609

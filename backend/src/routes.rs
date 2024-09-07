@@ -96,6 +96,6 @@ pub async fn get_elevation_data(
     QueryErr(lat_lon): QueryErr<LatLon>,
 ) -> Result<Json<GetElevationDataResponse>, Error> {
     Ok(Json(GetElevationDataResponse {
-        elevation: get_elevation(lat_lon).await?,
+        elevation: get_elevation(&lat_lon).await?,
     }))
 }
