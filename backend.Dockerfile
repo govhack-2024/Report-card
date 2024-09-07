@@ -16,7 +16,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm i
 COPY . .
-ARG VITE_ELEVATION_URL
+ARG VITE_ELEVATION_URL=/ 
 RUN npm run build
 
 FROM alpine:3.20
