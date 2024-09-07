@@ -53,7 +53,7 @@ export const useCompletion = ({ currentQuery }: UseCompletionOptions) => {
       }
 
       const request = await fetch(
-        `${API_URL}/api/completion?query=${encodeURIComponent(currentQuery ?? "")}+nz`,
+        `${API_URL}/api/completion?query=${encodeURIComponent(query)}`,
       );
 
       const json = await request.json();

@@ -9,9 +9,10 @@ function App() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
-  let loading = false;
 
-  const { data, isLoading } = useCompletion({ currentQuery: searchQuery });
+  const { data, isLoading } = useCompletion({
+    currentQuery: searchQuery.trim().replace(/,/g, ""),
+  });
   const options = useMemo(() => {
     if (!Array.isArray(data)) {
       return [];
