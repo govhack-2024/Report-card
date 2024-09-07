@@ -51,6 +51,10 @@ export const useCompletion = ({ currentQuery }: UseCompletionOptions) => {
       if (currentQuery.trim() == "") {
         return [];
       }
+      let query = currentQuery;
+      if (query) {
+        query += " new zealand";
+      }
 
       const request = await fetch(
         `${API_URL}/api/completion?query=${encodeURIComponent(query)}`,
