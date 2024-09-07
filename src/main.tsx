@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import App from "./App.tsx";
+import About from "./About.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Results from "./Results.tsx";
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "/results",
     element: <Results />,
   },
+  {
+    path: "/about",
+    element: <About />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -9,6 +9,7 @@ function App() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
+  let loading = false;
 
   const { data, isLoading } = useCompletion({ currentQuery: searchQuery });
   const options = useMemo(() => {
@@ -42,9 +43,9 @@ function App() {
   return (
     <>
       <section className="mt-8 border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white">
-        <h1 className="">Report Card</h1>
+        <h1 className="">Haxx Water Report</h1>
         <p className="text-gray-500">
-          This is a report card for the Vite + React setup.
+          Calculate when your house will be underwater due to sea level rise.
         </p>
         <Select
           options={options}
