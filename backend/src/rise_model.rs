@@ -1,5 +1,6 @@
 use crate::{data::{Error, LatLon}, elevation::get_elevation, tide_datasource::{get_tide_estimate, TideMeasurementSite}, vlm_estimator::{get_vlm_estimate, VLMEstimation}};
 
+#[derive(serde::Serialize, serde::Deserialize, Debug, Clone)]
 pub struct LocationRiseModel {
     pub lat_lon: LatLon,
     pub vlm_estimation: VLMEstimation,

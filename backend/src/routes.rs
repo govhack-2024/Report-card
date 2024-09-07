@@ -6,6 +6,7 @@ use tracing::error;
 
 use crate::data::LatLon;
 use crate::elevation::get_elevation;
+use crate::rise_model::{get_rise_model, LocationRiseModel};
 use crate::{
     data::Error,
     street_search::{NominatimSearchResponse, NominatimService},
@@ -98,4 +99,11 @@ pub async fn get_elevation_data(
     Ok(Json(GetElevationDataResponse {
         elevation: get_elevation(&lat_lon).await?,
     }))
+}
+
+
+pub async fn get_api_rise_model(
+    QueryErr(lat_lon): QueryErr<LatLon>,
+) -> Result<Json<LocationRiseModel>, Error> {
+    Ok(Json(get_rise_model(lat_lon).await?))
 }

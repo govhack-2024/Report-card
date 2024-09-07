@@ -2,8 +2,9 @@ use axum::{
     http::{HeaderMap, HeaderValue},
     routing::get,
 };
+use log::info;
 use reqwest::header;
-use routes::{get_completion, get_elevation_data};
+use routes::{get_api_rise_model, get_completion, get_elevation_data};
 use street_search::NominatimService;
 use tokio::net::TcpListener;
 use tower_http::{
@@ -46,6 +47,7 @@ async fn main() {
     let router = axum::Router::new()
         .route("/completion", get(get_completion))
         .route("/elevation", get(get_elevation_data))
+        .route("/rise_model", get(get_api_rise_model))
         .layer(
             CorsLayer::new()
                 .allow_methods(AllowMethods::any())
@@ -55,6 +57,8 @@ async fn main() {
         .with_state(nominatim_service);
 
     let listener = TcpListener::bind("0.0.0.0:8080").await.unwrap();
+
+    info!("Server live on http://localhost:8080");
 
     axum::serve(listener, router.into_make_service())
         .await
