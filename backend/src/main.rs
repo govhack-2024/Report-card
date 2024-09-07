@@ -9,6 +9,7 @@ use street_search::NominatimService;
 use tokio::net::TcpListener;
 use tower_http::{
     cors::{AllowMethods, CorsLayer},
+    services::{ServeDir, ServeFile},
     trace::TraceLayer,
 };
 use tracing::Level;
@@ -17,11 +18,11 @@ use tracing_subscriber::fmt;
 pub mod config;
 pub mod data;
 pub mod elevation;
+pub mod rise_model;
 pub mod routes;
 pub mod street_search;
-pub mod vlm_estimator;
-pub mod rise_model;
 pub mod tide_datasource;
+pub mod vlm_estimator;
 
 #[tokio::main]
 async fn main() {
@@ -45,9 +46,15 @@ async fn main() {
         NominatimService::new("https://nominatim.openstreetmap.org".to_string(), client);
 
     let router = axum::Router::new()
-        .route("/completion", get(get_completion))
-        .route("/elevation", get(get_elevation_data))
-        .route("/rise_model", get(get_api_rise_model))
+        .route("/api/completion", get(get_completion))
+        .route("/api/elevation", get(get_elevation_data))
+        .route("/api/rise_model", get(get_api_rise_model))
+        .nest_service(
+            "/",
+            ServeDir::new("./frontend/")
+                .append_index_html_on_directories(true)
+                .fallback(ServeFile::new("./frontend/index.html")),
+        )
         .layer(
             CorsLayer::new()
                 .allow_methods(AllowMethods::any())
