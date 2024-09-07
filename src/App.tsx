@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Select } from "@/components/Select";
 import { useCompletion } from "./lib/elevation-api";
 import { useEffect, useMemo, useState } from "react";
@@ -9,7 +8,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
-  const { data } = useCompletion({ currentQuery: searchQuery });
+  const { data, isLoading } = useCompletion({ currentQuery: searchQuery });
   const options = useMemo(() => {
     if (!Array.isArray(data)) {
       return [];
@@ -40,12 +39,8 @@ function App() {
           }}
           inputValue={query}
           onInputChange={setQuery}
+          loading={isLoading}
         />
-        <Link to="/results">
-          <Button variant="default" className="block w-full mt-4">
-            Get Results
-          </Button>
-        </Link>
       </section>
     </>
   );
