@@ -13,15 +13,17 @@ RUN cargo build --release
 
 FROM node:20.17.0-alpine3.20 AS frontend
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm i
+RUN npm i -g pnpm
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm i
 COPY . .
 ARG VITE_ELEVATION_URL=https://water.haxx.nz
-RUN VITE_ELEVATION_URL=${VITE_ELEVATION_URL} npm run build
+RUN VITE_ELEVATION_URL=${VITE_ELEVATION_URL} pnpm build
 
 FROM alpine:3.20
 WORKDIR /app
 EXPOSE 8080
 COPY --from=builder /app/target/release/backend /app
 COPY --from=frontend /app/dist /app/frontend
+COPY backend/data data
 CMD ["/app/backend"]

@@ -3,6 +3,7 @@ type SelectProps<T> = {
   options: { value: T; label: string }[];
   onSelect: (value: T) => void;
   inputValue: string;
+  loading: boolean;
 };
 
 export const Select = <T,>({
@@ -10,6 +11,7 @@ export const Select = <T,>({
   options,
   onSelect,
   inputValue,
+  loading,
 }: SelectProps<T>) => {
   return (
     <div>
@@ -29,6 +31,24 @@ export const Select = <T,>({
             {option.label}
           </button>
         ))}
+      <div className="flex flex-row flex-wrap content-center items-center gap-1 bg-white border-gray-200 shadows-md">
+        {inputValue == "" ? (
+          <p>Start typing to search</p>
+        ) : loading ? (
+          <p>Loading</p>
+        ) : options.length === 0 ? (
+          <p>No Results</p>
+        ) : (
+          options.map((option, index) => (
+            <button
+              key={index}
+              onClick={() => onSelect(option.value)}
+              className="bg-transparent text-blue-600 hover:underline text-start border-none rounded-none border-b border-gray-900 hover:text-blue-900"
+            >
+              {option.label}
+            </button>
+          ))
+        )}
       </div>
     </div>
   );
