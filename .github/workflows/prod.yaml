@@ -1,0 +1,16 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: self-hosted 
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Deploy to production
+      run: |
+        echo "Deploying to production"
+        docker compose build
+        docker compose up -d
+        echo "Deployed!"

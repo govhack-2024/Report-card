@@ -12,5 +12,6 @@ RUN cargo build --release
 
 FROM alpine:3.20
 WORKDIR /app
+EXPOSE 8080
 COPY --from=builder /app/target/release/backend /app
 CMD ["/app/backend"]
