@@ -18,7 +18,7 @@ type DataGraphParams = {
 };
 
 const HIGH_TIDE_COLOR = "#07c5f9";
-const LOW_TIDE_COLOR = "#ed7512";
+const LOW_TIDE_COLOR = "#0d47c4";
 const HOUSE_COLOR = "#ed7512";
 
 export const DataGraph = ({ getLevels }: DataGraphParams) => {
@@ -52,7 +52,7 @@ export const DataGraph = ({ getLevels }: DataGraphParams) => {
         width={300}
         orientation="horizontal"
       />
-      <XYPlot width={300} height={300}>
+      <XYPlot width={600} height={800}>
         <HorizontalGridLines />
         <XAxis />
         <YAxis />

@@ -2,7 +2,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useLocationRise } from "./lib/elevation-api";
 import { useCallback } from "react";
 import { DataGraph } from "./components/DataGraph";
-import { predictFindIntercept } from "./lib/climate_model";
+import { predictFindIntercept, predictForwardYears } from "./lib/climate_model";
 
 function Results() {
   const [searchParams] = useSearchParams();
@@ -17,10 +17,15 @@ function Results() {
   const getData = useCallback(
     (year: number) => {
       if (data && !("message" in data)) {
+        const { relative_sea_level, vlm_change } = predictForwardYears(
+          data,
+          year - 2024,
+        );
+
         return {
-          elevation: data.current_elevation + Math.sin(year) / 100,
-          lowTide: data.tide_estimation.spring_tide_min + year / 1000,
-          highTide: data.tide_estimation.spring_tide_max + year / 1000,
+          elevation: data.current_elevation + vlm_change,
+          lowTide: data.tide_estimation.spring_tide_min + relative_sea_level,
+          highTide: data.tide_estimation.spring_tide_max + relative_sea_level,
         };
       }
 
@@ -61,13 +66,22 @@ function Results() {
         <DataGraph getLevels={getData} />
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Timeline</h2>
-          <p className="p-4">Surge Flood: {predictions.surge_flood?.year || "Never!"}</p>
-          <p className="p-4">High Tide Flood: {predictions.high_tide_flood?.year || "Never!"}</p>
-          <p className="p-4">On Average Flooded: {predictions.average_tide_flood?.year || "Never!"}</p>
-          <p className="p-4">Low Tide Flood: {predictions.low_tide_flood?.year || "Never!"}</p>
-          <p className="p-4">Always Underwater: {predictions.always_flooded?.year || "Never!"}</p>
-
-
+          <p className="p-4">
+            Surge Flood: {predictions.surge_flood?.year || "Never!"}
+          </p>
+          <p className="p-4">
+            High Tide Flood: {predictions.high_tide_flood?.year || "Never!"}
+          </p>
+          <p className="p-4">
+            On Average Flooded:{" "}
+            {predictions.average_tide_flood?.year || "Never!"}
+          </p>
+          <p className="p-4">
+            Low Tide Flood: {predictions.low_tide_flood?.year || "Never!"}
+          </p>
+          <p className="p-4">
+            Always Underwater: {predictions.always_flooded?.year || "Never!"}
+          </p>
         </section>
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Current elevation</h2>
@@ -90,6 +104,7 @@ function Results() {
             {data.tide_estimation.neap_tide_max}
           </p>
         </section>{" "}
+        Street
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Spring Tide estiamtion</h2>
           <p className="p-4">
