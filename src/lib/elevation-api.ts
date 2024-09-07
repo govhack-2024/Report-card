@@ -18,7 +18,7 @@ export type LocationRiseResponse = {
   lat_lon: LatLon;
   vlm_estimation: {
     closest_site: {
-      "Site ID": number;
+      site_id: number;
       lat_lon: LatLon;
       vertical_rate_bop_corrected: number;
       sigma_uncertainty: number;

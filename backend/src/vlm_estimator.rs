@@ -10,7 +10,6 @@ static DATASET_PATH: &str = "./data/NZ_VLM_final_May24.csv";
 
 #[derive(serde::Serialize, serde::Deserialize, Debug, Clone)]
 pub struct VLMDatasetRecord {
-    #[serde(rename = "Site ID")]
     pub site_id: usize,
     pub lat_lon: LatLon,
     pub vertical_rate_bop_corrected: f64,
