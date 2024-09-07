@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 
 function App() {
   const [query, setQuery] = useState("");
+  const [waiting, setWaiting] = useState(false);
+
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
@@ -21,9 +23,21 @@ function App() {
   }, [data]);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setSearchQuery(query), 1000);
-    return () => clearTimeout(timeout);
+    if (!waiting) {
+      setWaiting(true);
+      setTimeout(() => {
+        setSearchQuery(query);
+      }, 1000);
+    } else {
+      return () => {};
+    }
   }, [query]);
+
+  useEffect(() => {
+    if (waiting && !isLoading) {
+      setTimeout(() => setWaiting(false), 1000);
+    }
+  }, [waiting, isLoading]);
 
   return (
     <>
