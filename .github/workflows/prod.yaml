@@ -11,7 +11,8 @@ jobs:
     - name: Deploy to production
       run: |
         echo "Deploying to production"
-        export /home/linuxuser/prod.env 
+        source /home/linuxuser/prod.env 
+        export VITE_MAPBOX_API_KEY=$VITE_MAPBOX_API_KEY
         docker compose build
         docker compose up -d
         echo "Deployed!"
