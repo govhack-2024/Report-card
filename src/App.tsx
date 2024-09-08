@@ -43,11 +43,11 @@ function App() {
 
   return (
     <>
-      <section className=" border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white mt-[40vh] max-lg:m-4">
+      <section className=" border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-xl  p-8 bg-white mt-[40vh] max-lg:m-4 max-lg:max-w-none">
         <h1 className="text-xl font-semibold">Ocean Tax</h1>
         <p className="text-gray-500">
-          Enter an address to find out when your house will be affected by
-          climate change.
+          Enter a New Zealand address to find out when your house will be
+          affected by climate change.
         </p>
         <Select
           options={options}
