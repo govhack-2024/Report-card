@@ -3,7 +3,7 @@ import { useLocationRise } from "./lib/elevation-api";
 import { useCallback } from "react";
 import { DataGraph } from "./components/DataGraph";
 import { predictFindIntercept, predictForwardYears } from "./lib/climate_model";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Footer } from "./components/Footer";
 
 function Results() {
   const btn = document.getElementById("share");
@@ -116,15 +116,25 @@ function Results() {
           getLevels={getData}
           years_to_predict={predictions.always_flooded?.year ?? 300}
         />
-        <div className="bg-white flex flex-col gap-4 p-4 rounded-lg mt-4 shadow-sm">
-          <section className="mb-4  rounded-lg border border-gray-200 bg-white">
+        <div className="bg-white flex flex-col gap-4 rounded-lg mt-4 shadow-sm">
+          <section className=" rounded-lg border border-gray-200 bg-white">
             <h2 className="p-4  text-xs ">
-              Stats for nerds &amp; modelling assumptions:
+              Methodology, disclaimers, and modelling assumptions:
             </h2>
             <div className="p-4 border-t">
-              {" "}
-              <p className="font-semibold mb-3">Disclaimer</p>
+              <p className="font-semibold mb-3">Methodology</p>
+              <a href="https://github.com/govhack-2024/Report-card/tree/main/backend">
+                Available on GitHub
+              </a>{" "}
+            </div>{" "}
+            <div className="p-4 border-t">
+              <p className="font-semibold mb-3">Disclaimers</p>
               <ul className="list-disc list-outside pl-5 space-y-3">
+                <li>
+                  This report is not 100% accurate and was originally built as a
+                  proof of concept in 46 hours - see methodology above for more
+                  information
+                </li>
                 <li>Sea level rise is not necessarily linear</li>
                 <li>If the emissions stop, the warming stops</li>
                 <li className="">
@@ -134,13 +144,12 @@ function Results() {
                   in the americas after the columbian genocide)
                 </li>
                 <li>
-                  If we remove greehouse gases the planet will cool over time,
-                  it’s physics
+                  If we remove greehouse gases the planet will cool over time
                 </li>
               </ul>
             </div>
-
-            <div className="p-4 flex border-t flex-wrap">
+            <p className="font-semibold border-t p-4">Assumptions</p>
+            <div className="px-4 pb-2 flex  flex-wrap">
               <h3 className="text-xs font-semibold">Surge Flood result: </h3>{" "}
               <p className="text-xs">
                 {predictions.surge_flood?.year
@@ -148,7 +157,7 @@ function Results() {
                   : " Never!"}
               </p>
             </div>
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex  flex-wrap">
               <h3 className="text-xs font-semibold">
                 {" "}
                 High Tide Flood result:{" "}
@@ -159,8 +168,7 @@ function Results() {
                   : "Never!"}
               </p>
             </div>
-
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">
                 {" "}
                 On Average Flooded result:{" "}
@@ -171,8 +179,7 @@ function Results() {
                   : "Never!"}
               </p>
             </div>
-
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">
                 Average Tide Flood result:{" "}
               </h3>{" "}
@@ -180,13 +187,13 @@ function Results() {
                 {predictions.average_tide_flood?.year || "Never!"}
               </p>
             </div>
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">Low tide flood result: </h3>{" "}
               <p className="text-xs">
                 {predictions.low_tide_flood?.year || "Never!"}
               </p>
             </div>
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">
                 Always underwater result:{" "}
               </h3>{" "}
@@ -194,15 +201,14 @@ function Results() {
                 {predictions.always_flooded?.year || "Never!"}
               </p>
             </div>
-
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">Current elevation : </h3>
               <p className=" text-xs">
                 &nbsp;
                 {data.current_elevation.toFixed(2)} meters above sea level
               </p>
             </div>
-            <div className="p-4 flex border-t flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">
                 Surge tide estimation :{" "}
               </h3>
@@ -211,7 +217,7 @@ function Results() {
                 {data.tide_estimation.surge_tide_max}
               </p>
             </div>
-            <div className="p-4 border-t flex flex-wrap">
+            <div className="px-4 py-2 flex flex-wrap">
               <h3 className="text-xs font-semibold">
                 Spring tide estimation :{" "}
               </h3>
@@ -220,7 +226,7 @@ function Results() {
                 {data.tide_estimation.spring_tide_max}
               </p>
             </div>
-            <div className="p-4 border-t flex flex-wrap">
+            <div className="px-4 py-2 pb-4 flex flex-wrap">
               <h3 className="text-xs font-semibold">Neap Tide estimation : </h3>
               <p className=" text-xs">
                 {data.tide_estimation.neap_tide_min} -{" "}
@@ -258,67 +264,7 @@ function Results() {
           </Link>
         </div>
       </section>
-      <footer className="mt-8 text-center text-gray-500 max-w-lg mx-auto text-sm max-lg:my-4 max-lg:w-full">
-        <p>
-          Built for the Govhack 2024 Hackathon by{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://jmw.nz"
-          >
-            Jasper Miller-Waugh
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://laspruca.nz"
-          >
-            Connor Hare
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://linktr.ee/haunanipao"
-          >
-            Haunani Pao
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/steffanie-r/"
-          >
-            Steffanie Relucio
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/elle-lum"
-          >
-            Elle Lum
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/uxwithjade/"
-          >
-            Jade Lim
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/johncaveishere/"
-          >
-            John Cave
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://walt.online"
-          >
-            Walter Lim
-          </a>
-          .
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

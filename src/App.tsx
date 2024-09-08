@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Map } from "@/components/Map";
 import { AddressSelector } from "./components/AddressSelector";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -85,67 +86,7 @@ function App() {
           </TabsContent>
         </Tabs>
       </section>
-      <footer className="mt-8 text-center text-gray-500 max-w-lg mx-auto text-sm max-lg:my-4 max-lg:w-full">
-        <p>
-          Built for the Govhack 2024 Hackathon by{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://jmw.nz"
-          >
-            Jasper Miller-Waugh
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://laspruca.nz"
-          >
-            Connor Hare
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://linktr.ee/haunanipao"
-          >
-            Haunani Pao
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/steffanie-r/"
-          >
-            Steffanie Relucio
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/elle-lum"
-          >
-            Elle Lum
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/uxwithjade/"
-          >
-            Jade Lim
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://www.linkedin.com/in/johncaveishere/"
-          >
-            John Cave
-          </a>
-          ,{" "}
-          <a
-            className="text-inherit underline font-normal"
-            href="https://walt.online"
-          >
-            Walter Lim
-          </a>
-          .
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }
