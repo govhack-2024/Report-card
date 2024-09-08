@@ -67,11 +67,10 @@ function Results() {
 
           <h2 className="mt-2 text-4xl">
             {
-              Object.values(predictions)
-                .filter((value) => typeof value === "number" && value > 0)
-                .sort((a, b) => a - b)[0]
+              predictions ? Object.values(predictions)
+                .sort((a, b) => a - b)[0].year : "~"
             }
-            Years
+            &nbsp;Years
           </h2>
         </div>
         <DataGraph getLevels={getData} years_to_predict={predictions.always_flooded?.year ?? 300} />
