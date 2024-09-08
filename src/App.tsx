@@ -19,7 +19,7 @@ function App() {
     }
 
     return data.map(({ lat_lon, display_name }) => ({
-      value: lat_lon,
+      value: { address: display_name, ...lat_lon },
       label: display_name,
     }));
   }, [data]);
@@ -50,8 +50,8 @@ function App() {
         </p>
         <Select
           options={options}
-          onSelect={({ lat, lon }) => {
-            navigate(`/results?lat=${lat}&lon=${lon}`);
+          onSelect={({ lat, lon, address }) => {
+            navigate(`/results?lat=${lat}&lon=${lon}&address=${address}`);
           }}
           inputValue={query}
           onInputChange={setQuery}

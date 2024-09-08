@@ -71,13 +71,17 @@ export const useCompletion = ({ currentQuery }: UseCompletionOptions) => {
   });
 };
 
-type UseLocationRiseOptions = LatLon;
-export const useLocationRise = ({ lat, lon }: UseLocationRiseOptions) =>
+type UseLocationRiseOptions = LatLon & { address: string };
+export const useLocationRise = ({
+  lat,
+  lon,
+  address,
+}: UseLocationRiseOptions) =>
   useQuery({
     queryKey: ["elevation", lat, lon],
     queryFn: async () => {
       const request = await fetch(
-        `${API_URL}/api/rise_model?lat=${lat}&lon=${lon}`,
+        `${API_URL}/api/rise_model?lat=${lat}&lon=${lon}&address=${encodeURIComponent(address)}`,
       );
 
       const json = await request.json();

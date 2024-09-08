@@ -12,7 +12,9 @@ function Results() {
     lon: Number(searchParams.get("lon")),
   };
 
-  const { data, isLoading } = useLocationRise(latlon);
+  const address = searchParams.get("address") ?? "";
+
+  const { data, isLoading } = useLocationRise({ address, ...latlon });
 
   const getData = useCallback(
     (year: number) => {
@@ -38,8 +40,12 @@ function Results() {
     [data],
   );
 
-  if (!searchParams.has("lat") || !searchParams.has("lon")) {
-    return <>Please set the lat and lon parameters</>;
+  if (
+    !searchParams.has("lat") ||
+    !searchParams.has("lon") ||
+    !searchParams.has("address")
+  ) {
+    return <>Please set the lat and lon and address parameters</>;
   }
 
   if (isLoading || !data) {
@@ -60,9 +66,7 @@ function Results() {
       <section className="mt-8 border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white">
         <Link to="/">Back </Link>
         <h1 className="text-lg">Report Card</h1>
-        <p className="text-gray-500">
-          This is a report card for the Vite + React setup.
-        </p>
+        <p className="text-gray-500">{address}</p>
         <DataGraph getLevels={getData} />
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Timeline</h2>

@@ -101,9 +101,16 @@ pub async fn get_elevation_data(
     }))
 }
 
+#[derive(serde::Deserialize)]
+pub struct RiseModelOptions {
+    lat: f64,
+    lon: f64,
+    address: String,
+}
 
 pub async fn get_api_rise_model(
-    QueryErr(lat_lon): QueryErr<LatLon>,
+    QueryErr(RiseModelOptions { lat, lon, .. }): QueryErr<RiseModelOptions>,
 ) -> Result<Json<LocationRiseModel>, Error> {
+    let lat_lon = LatLon { lat, lon };
     Ok(Json(get_rise_model(lat_lon).await?))
 }
