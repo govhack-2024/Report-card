@@ -55,11 +55,11 @@ function Results() {
 
   return (
     <>
-      <section className="mt-8 border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white">
-        <p className="text-gray-500 text-sm">
+      <section className="mt-8  mx-auto max-w-2xl rounded-md  p-8 ">
+        <p className="text-black text-sm">
           Report for <br /> {address}
         </p>{" "}
-        <div className="p-4 border rounded-md shadow-sm mb-8  mt-8">
+        <div className="p-4 border rounded-md shadow-sm mb-8  mt-8 bg-white">
           <p className="text-xs border-b mb-2 pb-4">
             Assuming nothing changes about carbon emissions..
           </p>
@@ -73,8 +73,29 @@ function Results() {
             &nbsp;Years
           </h2>
         </div>
-        <DataGraph getLevels={getData} years_to_predict={predictions.always_flooded?.year ?? 300} />
-        <section className="mb-4 mt-24  rounded-lg border border-gray-200">
+        <div className=" border rounded-md shadow-sm mb-8  mt-8 bg-white">
+          <p className="text-xs border-b p-4">Climate change impact</p>
+          <div className="flex">
+            <div className="flex-1 border-r p-4">
+              <p className="text-sm">Cost per year</p>
+              <h4 className="text-lg">$120,000 </h4>
+              <p className="text-xs mt-2">
+                Until your house becomes unliveable
+              </p>
+            </div>
+
+            <div className="flex-1 p-4">
+              <p className="text-sm">Assuming a valuation of</p>
+              <h4 className="text-lg">$120,000 </h4>
+              <p className="text-xs mt-2">View Source</p>
+            </div>
+          </div>
+        </div>
+        <DataGraph
+          getLevels={getData}
+          years_to_predict={predictions.always_flooded?.year ?? 300}
+        />
+        <section className="mb-4 mt-8  rounded-lg border border-gray-200 bg-white">
           <h2 className="p-4  text-xs  font-semibold">
             Stats for nerds &amp; modelling assumptions:
           </h2>
@@ -175,9 +196,9 @@ function Results() {
         </section>
         <Link
           to="/"
-          className="px-8 py-2 bg-blue-400 text-white rounded-md block w-fit"
+          className="px-8 py-2 bg-blue-400 text-white rounded-md block text-center"
         >
-          Back{" "}
+          Try another address{" "}
         </Link>
       </section>
     </>
