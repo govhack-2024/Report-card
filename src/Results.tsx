@@ -97,7 +97,13 @@ function Results() {
             <div className="flex-1 p-4">
               <p className="text-sm text-gray-600">Assuming a valuation of</p>
               <h4 className="text-lg">$120,000 </h4>
-              <a className="text-xs mt-2 text-blue-600">View Source</a>
+              <a
+                className="text-xs mt-2 text-blue-600"
+                href="https://www.aucklandcouncil.govt.nz/property-rates-valuations/pages/find-property-rates-valuation.aspx"
+                target="_blank"
+              >
+                View Source
+              </a>
             </div>
           </div>
         </div>
