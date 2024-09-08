@@ -24,29 +24,13 @@ function Results() {
     ); // Providing a fallback value if no positive numbers found
   };
 
-  const getData = useCallback(
-    (year: number) => {
-      if (data && !("message" in data)) {
-        const { relative_sea_level, vlm_change } = predictForwardYears(
-          data,
-          year - 2024
-        );
+  const getData = useCallback(() => {
+    if (data && !("message" in data)) {
+      return data;
+    }
 
-        return {
-          elevation: data.current_elevation + vlm_change,
-          lowTide: data.tide_estimation.spring_tide_min + relative_sea_level,
-          highTide: data.tide_estimation.spring_tide_max + relative_sea_level,
-        };
-      }
-
-      return {
-        elevation: 0,
-        lowTide: 0,
-        highTide: 0,
-      };
-    },
-    [data]
-  );
+    return null;
+  }, [data]);
 
   if (
     !searchParams.has("lat") ||
