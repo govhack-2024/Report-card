@@ -78,17 +78,17 @@ function Results() {
           <p className="text-xs border-b p-4">Climate change impact</p>
           <div className="flex">
             <div className="flex-1 border-r p-4">
-              <p className="text-sm">Cost per year</p>
+              <p className="text-sm text-gray-600">Cost per year</p>
               <h4 className="text-lg">$120,000 </h4>
-              <p className="text-xs mt-2">
+              <p className="text-xs mt-2 text-gray-600">
                 Until your house becomes unliveable
               </p>
             </div>
 
             <div className="flex-1 p-4">
-              <p className="text-sm">Assuming a valuation of</p>
+              <p className="text-sm text-gray-600">Assuming a valuation of</p>
               <h4 className="text-lg">$120,000 </h4>
-              <p className="text-xs mt-2">View Source</p>
+              <a className="text-xs mt-2 text-blue-600">View Source</a>
             </div>
           </div>
         </div>
