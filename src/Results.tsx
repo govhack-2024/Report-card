@@ -3,8 +3,20 @@ import { useLocationRise } from "./lib/elevation-api";
 import { useCallback } from "react";
 import { DataGraph } from "./components/DataGraph";
 import { predictFindIntercept, predictForwardYears } from "./lib/climate_model";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 function Results() {
+  const btn = document.getElementById("share");
+
+  if (btn) {
+    btn.addEventListener("click", function () {
+      navigator.share({
+        url: document.URL,
+        title: document.title,
+        text: "Find out how long your perty has left before it's underwater",
+      });
+    });
+  }
   const [searchParams] = useSearchParams();
 
   const latlon = {
@@ -73,7 +85,7 @@ function Results() {
           <div className="flex">
             <div className="flex-1 border-r p-4">
               <p className="text-sm text-gray-600">Cost per year</p>
-              <h4 className="text-lg">$120,000 </h4>
+              <h4 className="text-lg">$12,000 </h4>
               <p className="text-xs mt-2 text-gray-600">
                 Until your house becomes unliveable
               </p>
@@ -90,111 +102,162 @@ function Results() {
           getLevels={getData}
           years_to_predict={predictions.always_flooded?.year ?? 300}
         />
-        <section className="mb-4 mt-4  rounded-lg border border-gray-200 bg-white">
-          <h2 className="p-4  text-xs ">
-            Stats for nerds &amp; modelling assumptions:
-          </h2>
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">Surge Flood result: </h3>{" "}
-            <p className="text-xs">
-              {predictions.surge_flood?.year
-                ? `${predictions.surge_flood.year} Years`
-                : " Never!"}
-            </p>
-          </div>
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold"> High Tide Flood result: </h3>{" "}
-            <p className="text-xs">
-              {predictions.high_tide_flood?.year
-                ? `${predictions.high_tide_flood.year} Years`
-                : "Never!"}
-            </p>
-          </div>
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-lg mt-4 shadow-sm">
+          <Tabs defaultValue="action" className="w-full">
+            <TabsList className="w-full gap-1 ">
+              <TabsTrigger
+                className="bg-transparent data-[state=active]:bg-white flex-1 text-blue-600"
+                value="action"
+              >
+                Things you can do
+              </TabsTrigger>
+              <TabsTrigger
+                className="bg-transparent data-[state=active]:bg-white flex-1  text-blue-600"
+                value="stats"
+              >
+                Methodology / Stats for Nerds
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="action">
+              <h3 className="mt-4 border-b pb-4 mb-4 font-semibold">
+                Things you can do to slow this down
+              </h3>
+              <ul className="list-disc list-inside">
+                <li>Not much, we're doomed</li>
+              </ul>
+            </TabsContent>
+            <TabsContent value="stats">
+              <section className="mb-4 mt-4  rounded-lg border border-gray-200 bg-white">
+                <h2 className="p-4  text-xs ">
+                  Stats for nerds &amp; modelling assumptions:
+                </h2>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Surge Flood result:{" "}
+                  </h3>{" "}
+                  <p className="text-xs">
+                    {predictions.surge_flood?.year
+                      ? `${predictions.surge_flood.year} Years`
+                      : " Never!"}
+                  </p>
+                </div>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    {" "}
+                    High Tide Flood result:{" "}
+                  </h3>{" "}
+                  <p className="text-xs">
+                    {predictions.high_tide_flood?.year
+                      ? `${predictions.high_tide_flood.year} Years`
+                      : "Never!"}
+                  </p>
+                </div>
 
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">
-              {" "}
-              On Average Flooded result:{" "}
-            </h3>{" "}
-            <p className="text-xs">
-              {predictions.high_tide_flood?.year
-                ? `${predictions.high_tide_flood.year} Years`
-                : "Never!"}
-            </p>
-          </div>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    {" "}
+                    On Average Flooded result:{" "}
+                  </h3>{" "}
+                  <p className="text-xs">
+                    {predictions.high_tide_flood?.year
+                      ? `${predictions.high_tide_flood.year} Years`
+                      : "Never!"}
+                  </p>
+                </div>
 
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">
-              Average Tide Flood result:{" "}
-            </h3>{" "}
-            <p className="text-xs ">
-              {predictions.average_tide_flood?.year || "Never!"}
-            </p>
-          </div>
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">Low tide flood result: </h3>{" "}
-            <p className="text-xs">
-              {predictions.low_tide_flood?.year || "Never!"}
-            </p>
-          </div>
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">
-              Always underwater result:{" "}
-            </h3>{" "}
-            <p className="text-xs">
-              {predictions.always_flooded?.year || "Never!"}
-            </p>
-          </div>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Average Tide Flood result:{" "}
+                  </h3>{" "}
+                  <p className="text-xs ">
+                    {predictions.average_tide_flood?.year || "Never!"}
+                  </p>
+                </div>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Low tide flood result:{" "}
+                  </h3>{" "}
+                  <p className="text-xs">
+                    {predictions.low_tide_flood?.year || "Never!"}
+                  </p>
+                </div>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Always underwater result:{" "}
+                  </h3>{" "}
+                  <p className="text-xs">
+                    {predictions.always_flooded?.year || "Never!"}
+                  </p>
+                </div>
 
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">Current elevation : </h3>
-            <p className=" text-xs">
-              &nbsp;
-              {data.current_elevation.toFixed(2)} meters above sea level
-            </p>
-          </div>
-          <div className="p-4 flex border-t flex-wrap">
-            <h3 className="text-xs font-semibold">Surge tide estimation : </h3>
-            <p className=" text-xs">
-              {data.tide_estimation.surge_tide_min} -{" "}
-              {data.tide_estimation.surge_tide_max}
-            </p>
-          </div>
-          <div className="p-4 border-t flex flex-wrap">
-            <h3 className="text-xs font-semibold">Spring tide estimation : </h3>
-            <p className=" text-xs">
-              {data.tide_estimation.spring_tide_min} -{" "}
-              {data.tide_estimation.spring_tide_max}
-            </p>
-          </div>
-          <div className="p-4 border-t flex flex-wrap">
-            <h3 className="text-xs font-semibold">Neap Tide estimation : </h3>
-            <p className=" text-xs">
-              {data.tide_estimation.neap_tide_min} -{" "}
-              {data.tide_estimation.neap_tide_max}
-            </p>
-          </div>
-          <div className="p-4 border-t flex flex-col gap-2 flex-wrap">
-            <h3 className="text-xs font-semibold">
-              Vertical land movement estimation :{" "}
-            </h3>
-            <p className=" text-xs">
-              lat: {data.vlm_estimation.closest_site.lat_lon.lat}
-            </p>
-            <p className=" text-xs">
-              lon: {data.vlm_estimation.closest_site.lat_lon.lon}&nbsp;
-            </p>
-            <p className=" text-xs">
-              rate mm per year: {data.vlm_estimation.rate_mm_per_year}
-            </p>
-          </div>
-        </section>
-        <Link
-          to="/"
-          className="px-8 py-2 bg-blue-600 text-white rounded-md block text-center hover:text-blue-50 hover:bg-blue-700"
-        >
-          Try another address{" "}
-        </Link>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Current elevation :{" "}
+                  </h3>
+                  <p className=" text-xs">
+                    &nbsp;
+                    {data.current_elevation.toFixed(2)} meters above sea level
+                  </p>
+                </div>
+                <div className="p-4 flex border-t flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Surge tide estimation :{" "}
+                  </h3>
+                  <p className=" text-xs">
+                    {data.tide_estimation.surge_tide_min} -{" "}
+                    {data.tide_estimation.surge_tide_max}
+                  </p>
+                </div>
+                <div className="p-4 border-t flex flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Spring tide estimation :{" "}
+                  </h3>
+                  <p className=" text-xs">
+                    {data.tide_estimation.spring_tide_min} -{" "}
+                    {data.tide_estimation.spring_tide_max}
+                  </p>
+                </div>
+                <div className="p-4 border-t flex flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Neap Tide estimation :{" "}
+                  </h3>
+                  <p className=" text-xs">
+                    {data.tide_estimation.neap_tide_min} -{" "}
+                    {data.tide_estimation.neap_tide_max}
+                  </p>
+                </div>
+                <div className="p-4 border-t flex flex-col gap-2 flex-wrap">
+                  <h3 className="text-xs font-semibold">
+                    Vertical land movement estimation :{" "}
+                  </h3>
+                  <p className=" text-xs">
+                    lat: {data.vlm_estimation.closest_site.lat_lon.lat}
+                  </p>
+                  <p className=" text-xs">
+                    lon: {data.vlm_estimation.closest_site.lat_lon.lon}&nbsp;
+                  </p>
+                  <p className=" text-xs">
+                    rate mm per year: {data.vlm_estimation.rate_mm_per_year}
+                  </p>
+                </div>
+              </section>
+            </TabsContent>
+          </Tabs>
+        </div>
+        <div className="bg-white flex flex-col gap-4 p-4 rounded-lg mt-4 shadow-sm">
+          <button
+            id="share"
+            className="px-8 py-2 bg-blue-600 text-white rounded-md block text-center hover:text-blue-50 hover:bg-blue-700 w-full"
+          >
+            Share Result{" "}
+          </button>
+          <Link
+            to="/"
+            className="px-8 py-2 border-2 border-blue-600 text-blue-600 rounded-md block text-center hover:text-blue-50 hover:bg-blue-700"
+          >
+            Try another address{" "}
+          </Link>
+        </div>
       </section>
     </>
   );
