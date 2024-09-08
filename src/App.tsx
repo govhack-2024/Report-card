@@ -59,12 +59,65 @@ function App() {
           loading={isLoading}
         />
       </section>
-      <footer className="mt-8 text-center text-gray-500">
+      <footer className="mt-8 text-center text-gray-500 max-w-xl mx-auto ">
         <p>
           Built for the Govhack 2024 Hackathon by{" "}
-          <a className="https://jmw.nz">Jasper Miller-Waugh</a>,{" "}
-          <a href="https://laspruca.nz">Connor Hare</a>,{" "}
-          <a href="">Walter Lim</a>, <a>Jasper Miller-Waugh</a>, .
+          <a
+            className="text-inherit underline font-normal"
+            href="https://jmw.nz"
+          >
+            Jasper Miller-Waugh
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://laspruca.nz"
+          >
+            Connor Hare
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://linktr.ee/haunanipao"
+          >
+            Haunani Pao
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://www.linkedin.com/in/steffanie-r/"
+          >
+            Steffanie Relucio
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://www.linkedin.com/in/elle-lum"
+          >
+            Elle Lum
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://www.linkedin.com/in/uxwithjade/"
+          >
+            Jade Lim
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://www.linkedin.com/in/johncaveishere/"
+          >
+            John Cave
+          </a>
+          ,{" "}
+          <a
+            className="text-inherit underline font-normal"
+            href="https://walt.online"
+          >
+            Walter Lim
+          </a>
+          .
         </p>
       </footer>
     </>
