@@ -191,7 +191,7 @@ function Results() {
         </section>
         <Link
           to="/"
-          className="px-8 py-2 bg-blue-400 text-white rounded-md block text-center"
+          className="px-8 py-2 bg-blue-600 text-white rounded-md block text-center hover:text-blue-50 hover:bg-blue-700"
         >
           Try another address{" "}
         </Link>
