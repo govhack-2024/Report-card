@@ -43,10 +43,11 @@ function App() {
 
   return (
     <>
-      <section className="mt-8 border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white">
-        <h1 className="">Haxx Water Report</h1>
+      <section className=" border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-md  p-8 bg-white mt-[40vh] max-lg:m-4">
+        <h1 className="text-xl font-semibold">Ocean Tax</h1>
         <p className="text-gray-500">
-          Calculate when your house will be underwater due to sea level rise.
+          Enter an address to find out when your house will be affected by
+          climate change.
         </p>
         <Select
           options={options}
@@ -58,6 +59,14 @@ function App() {
           loading={isLoading}
         />
       </section>
+      <footer className="mt-8 text-center text-gray-500">
+        <p>
+          Built for the Govhack 2024 Hackathon by{" "}
+          <a className="https://jmw.nz">Jasper Miller-Waugh</a>,{" "}
+          <a href="https://laspruca.nz">Connor Hare</a>,{" "}
+          <a href="">Walter Lim</a>, <a>Jasper Miller-Waugh</a>, .
+        </p>
+      </footer>
     </>
   );
 }
