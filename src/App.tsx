@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Select } from "@/components/Select";
 import { LatLon, useCompletion } from "./lib/elevation-api";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -92,29 +94,43 @@ function App() {
       <section className=" border border-gray-100 shadow-sm mx-auto max-w-2xl rounded-xl  p-8 bg-white mt-[40vh] max-lg:m-4 max-lg:max-w-none">
         <h1 className="text-xl font-semibold">Ocean Tax</h1>
         <p className="text-gray-500">
-          Enter a New Zealand address to find out when your house will be
+          Select a New Zealand address to find out when your house will be
           affected by climate change.
         </p>
-        <Select
-          options={options}
-          onSelect={({ lat, lon, address }) => {
-            navigate(`/results?lat=${lat}&lon=${lon}&address=${address}`);
-          }}
-          inputValue={query}
-          onInputChange={setQuery}
-          loading={isLoading}
-        />
 
-        <div className="relative w-full h-[20rem]">
-          <div ref={mapDiv} className="map-container w-full h-full"></div>
-        </div>
-        {pinLocation ? (
-          <Link to={`/Results?lat=${pinLocation.lat}&lon=${pinLocation.lon}`}>
-            <button>Check at pin location</button>
-          </Link>
-        ) : (
-          <></>
-        )}
+        <Tabs defaultValue="account" className="w-[400px]">
+          <TabsList>
+            <TabsTrigger value="account">Search by Address</TabsTrigger>
+            <TabsTrigger value="password">Search on Map</TabsTrigger>
+          </TabsList>
+          <TabsContent value="account">
+            <Select
+              options={options}
+              onSelect={({ lat, lon, address }) => {
+                navigate(`/results?lat=${lat}&lon=${lon}&address=${address}`);
+              }}
+              inputValue={query}
+              onInputChange={setQuery}
+              loading={isLoading}
+            />
+
+            {pinLocation ? (
+              <Link
+                to={`/Results?lat=${pinLocation.lat}&lon=${pinLocation.lon}`}
+              >
+                <button>Check at pin location</button>
+              </Link>
+            ) : (
+              <></>
+            )}
+          </TabsContent>
+          <TabsContent value="password">
+            {" "}
+            <div className="relative w-full h-[20rem]">
+              <div ref={mapDiv} className="map-container w-full h-full"></div>
+            </div>
+          </TabsContent>
+        </Tabs>
       </section>
       <footer className="mt-8 text-center text-gray-500 max-w-xl mx-auto ">
         <p>
