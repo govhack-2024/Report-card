@@ -49,7 +49,11 @@ function Results() {
   }
 
   if (isLoading || !data) {
-    return <>Loading</>;
+    return (
+      <div className="h-screen w-screen flex items-center justify-center">
+        <p>Loading</p>
+      </div>
+    );
   }
 
   if ("message" in data) {
