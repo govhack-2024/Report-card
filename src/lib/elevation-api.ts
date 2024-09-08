@@ -16,6 +16,7 @@ export type CompletionResponse = {
 
 export type LocationRiseResponse = {
   lat_lon: LatLon;
+  address: string;
   vlm_estimation: {
     closest_site: {
       site_id: number;
@@ -71,7 +72,7 @@ export const useCompletion = ({ currentQuery }: UseCompletionOptions) => {
   });
 };
 
-type UseLocationRiseOptions = LatLon & { address: string };
+type UseLocationRiseOptions = LatLon & { address?: string };
 export const useLocationRise = ({
   lat,
   lon,
@@ -80,9 +81,13 @@ export const useLocationRise = ({
   useQuery({
     queryKey: ["elevation", lat, lon],
     queryFn: async () => {
-      const request = await fetch(
-        `${API_URL}/api/rise_model?lat=${lat}&lon=${lon}&address=${encodeURIComponent(address)}`,
-      );
+      const url = new URL(`${API_URL}/api/rise_model`);
+      url.searchParams.append("lat", "" + lat);
+      url.searchParams.append("lon", "" + lon);
+      if (address) {
+        url.searchParams.append("address", address);
+      }
+      const request = await fetch(url);
 
       const json = await request.json();
 

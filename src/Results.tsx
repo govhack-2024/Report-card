@@ -12,7 +12,7 @@ function Results() {
     lon: Number(searchParams.get("lon")),
   };
 
-  const address = searchParams.get("address") ?? "";
+  const address = searchParams.get("address") ?? undefined;
 
   const { data, isLoading } = useLocationRise({ address, ...latlon });
 
@@ -32,11 +32,7 @@ function Results() {
     return null;
   }, [data]);
 
-  if (
-    !searchParams.has("lat") ||
-    !searchParams.has("lon") ||
-    !searchParams.has("address")
-  ) {
+  if (!searchParams.has("lat") || !searchParams.has("lon")) {
     return <>Please set the lat and lon and address parameters</>;
   }
 

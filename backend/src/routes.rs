@@ -105,12 +105,31 @@ pub async fn get_elevation_data(
 pub struct RiseModelOptions {
     lat: f64,
     lon: f64,
+    address: Option<String>,
+}
+
+#[derive(serde::Deserialize, serde::Serialize)]
+pub struct GetApiRiseModelResponse {
+    #[serde(flatten)]
+    model_data: LocationRiseModel,
     address: String,
 }
 
 pub async fn get_api_rise_model(
-    QueryErr(RiseModelOptions { lat, lon, .. }): QueryErr<RiseModelOptions>,
-) -> Result<Json<LocationRiseModel>, Error> {
+    State(nominatim_service): State<NominatimService>,
+    QueryErr(RiseModelOptions { lat, lon, address }): QueryErr<RiseModelOptions>,
+) -> Result<Json<GetApiRiseModelResponse>, Error> {
     let lat_lon = LatLon { lat, lon };
-    Ok(Json(get_rise_model(lat_lon).await?))
+    let model_data = get_rise_model(lat_lon).await?;
+
+    let address = if let Some(address) = address {
+        address
+    } else {
+        nominatim_service.reverse(lat_lon).await?.display_name
+    };
+
+    Ok(Json(GetApiRiseModelResponse {
+        model_data,
+        address,
+    }))
 }

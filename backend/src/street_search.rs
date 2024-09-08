@@ -1,7 +1,8 @@
+use log::info;
 use reqwest::RequestBuilder;
 use tracing::error;
 
-use crate::data::Error;
+use crate::data::{Error, LatLon};
 
 #[derive(serde::Serialize, serde::Deserialize)]
 pub struct NominatimSearchResponse {
@@ -21,6 +22,21 @@ pub struct NominatimSearchResponse {
     pub place_id: i64,
     pub place_rank: i64,
     pub r#type: String,
+}
+
+#[derive(serde::Serialize, serde::Deserialize)]
+pub struct Address {
+    pub house_number: String,
+    pub road: String,
+    pub state: String,
+    pub postcode: String,
+    pub country: String,
+}
+
+#[derive(serde::Serialize, serde::Deserialize)]
+pub struct ReverseResult {
+    pub display_name: String,
+    pub address: Address,
 }
 
 pub struct SearchRequestBuilder<'a> {
@@ -96,6 +112,42 @@ impl NominatimService {
 
     pub fn search<'a>(&'a self) -> SearchRequestBuilder<'a> {
         SearchRequestBuilder::new(self)
+    }
+
+    pub async fn reverse(&self, lat_lon: LatLon) -> Result<ReverseResult, Error> {
+        let request = match self
+            .get("/reverse")
+            .query(&[("lat", lat_lon.lat), ("lon", lat_lon.lon)])
+            .query(&[("format", "jsonv2")])
+            .send()
+            .await
+        {
+            Ok(res) => res,
+            Err(ex) => {
+                error!("Could not fetch from nominatin: {ex}");
+                return Err(Error::UnknownError);
+            }
+        };
+
+        if request.status() != 200 {
+            error!(
+                "Could not revers lon lat (api status: {}, error {:?})",
+                request.status(),
+                request.text().await
+            );
+
+            return Err(Error::UnknownError);
+        }
+
+        let data = match request.json().await {
+            Ok(data) => data,
+            Err(ex) => {
+                error!("Could not deserialize response: {ex}");
+                return Err(Error::UnknownError);
+            }
+        };
+
+        Ok(data)
     }
 
     fn get(&self, path: impl std::fmt::Display) -> RequestBuilder {
