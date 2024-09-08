@@ -12,7 +12,7 @@ function Results() {
     lon: Number(searchParams.get("lon")),
   };
 
-  const address = searchParams.get("address") ?? "";
+  const address = searchParams.get("address") ?? undefined;
 
   const { data, isLoading } = useLocationRise({ address, ...latlon });
 
@@ -32,11 +32,7 @@ function Results() {
     return null;
   }, [data]);
 
-  if (
-    !searchParams.has("lat") ||
-    !searchParams.has("lon") ||
-    !searchParams.has("address")
-  ) {
+  if (!searchParams.has("lat") || !searchParams.has("lon")) {
     return <>Please set the lat and lon and address parameters</>;
   }
 
@@ -67,11 +63,10 @@ function Results() {
 
           <h2 className="mt-2 text-4xl">
             {
-              Object.values(predictions)
-                .filter((value) => typeof value === "number" && value > 0)
-                .sort((a, b) => a - b)[0]
+              predictions ? Object.values(predictions)
+                .sort((a, b) => a - b)[0].year : "~"
             }
-            Years
+            &nbsp;Years
           </h2>
         </div>
         <div className=" border rounded-md shadow-sm mb-8  mt-8 bg-white">
