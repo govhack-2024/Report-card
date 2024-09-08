@@ -75,7 +75,7 @@ export const DataGraph = ({ getLevels, years_to_predict }: DataGraphParams) => {
     <div className="">
       <Card className="p-0">
         <CardHeader className=" pb-4">
-          <CardTitle className="text-lg">Elevation Chart</CardTitle>
+          <CardTitle className="text-base">Elevation Chart</CardTitle>
           <CardDescription className="mt-0">
             {current_year} - {current_year + 300}
           </CardDescription>
