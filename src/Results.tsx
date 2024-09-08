@@ -67,18 +67,20 @@ function Results() {
         <p className="text-black text-sm">
           Report for <br /> {address}
         </p>{" "}
-        <div className="p-4 border rounded-md shadow-sm mb-4  mt-8 bg-white">
-          <p className="text-xs border-b mb-2 pb-4">
+        <div className=" border rounded-md shadow-sm mb-4  mt-8 bg-white">
+          <p className="text-xs border-b  p-4">
             Assuming nothing changes about carbon emissions..
           </p>
-          <h2 className=" text-md">Your property will be underwater in: </h2>
+          <div className="p-4">
+            <h2 className=" text-md">Your property will be underwater in: </h2>
 
-          <h2 className="mt-2 text-4xl">
-            {predictions
-              ? Object.values(predictions).sort((a, b) => a - b)[0].year
-              : "~"}
-            &nbsp;Years
-          </h2>
+            <h2 className="mt-2 text-4xl">
+              {predictions
+                ? Object.values(predictions).sort((a, b) => a - b)[0].year
+                : "~"}
+              &nbsp;Years
+            </h2>
+          </div>
         </div>
         <div className=" border rounded-md shadow-sm mb-4  mt-4 bg-white">
           <p className="text-xs border-b p-4">Climate change impact</p>
@@ -104,7 +106,7 @@ function Results() {
         />
         <div className="bg-white flex flex-col gap-4 p-4 rounded-lg mt-4 shadow-sm">
           <Tabs defaultValue="action" className="w-full">
-            <TabsList className="w-full gap-1 ">
+            <TabsList className="w-full gap-1 flex-wrap h-auto">
               <TabsTrigger
                 className="bg-transparent data-[state=active]:bg-white flex-1 text-blue-600"
                 value="action"
