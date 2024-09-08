@@ -10,6 +10,7 @@ export interface SeaLevelPoints {
 
 export interface SeaLevelPoint {
   year: number;
+  sea_level_change: number;
   relative_sea_level: number;
   vlm_change: number;
   temperature_increase: number;
@@ -33,6 +34,7 @@ export function predictForwardYears(
 
   return {
     year: years,
+    sea_level_change,
     relative_sea_level: sea_level_change - vml_change,
     vlm_change: vml_change,
     temperature_increase,
@@ -72,6 +74,7 @@ export function predictFindIntercept(
         found_points.always_flooded = {
           year,
           relative_sea_level,
+          sea_level_change: current_sea_level,
           vlm_change,
           temperature_increase,
         };
@@ -86,6 +89,7 @@ export function predictFindIntercept(
         found_points.low_tide_flood = {
           year,
           relative_sea_level,
+          sea_level_change: current_sea_level,
           vlm_change,
           temperature_increase,
         };
@@ -96,6 +100,7 @@ export function predictFindIntercept(
         found_points.average_tide_flood = {
           year,
           relative_sea_level,
+          sea_level_change: current_sea_level,
           vlm_change,
           temperature_increase,
         };
@@ -109,6 +114,7 @@ export function predictFindIntercept(
         found_points.high_tide_flood = {
           year,
           relative_sea_level,
+          sea_level_change: current_sea_level,
           vlm_change,
           temperature_increase,
         };
@@ -121,6 +127,7 @@ export function predictFindIntercept(
         found_points.surge_flood = {
           year,
           relative_sea_level,
+          sea_level_change: current_sea_level,
           vlm_change,
           temperature_increase,
         };

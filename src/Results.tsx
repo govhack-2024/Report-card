@@ -17,25 +17,12 @@ function Results() {
   const { data, isLoading } = useLocationRise({ address, ...latlon });
 
   const getData = useCallback(
-    (year: number) => {
+    () => {
       if (data && !("message" in data)) {
-        const { relative_sea_level, vlm_change } = predictForwardYears(
-          data,
-          year - 2024,
-        );
-
-        return {
-          elevation: data.current_elevation + vlm_change,
-          lowTide: data.tide_estimation.spring_tide_min + relative_sea_level,
-          highTide: data.tide_estimation.spring_tide_max + relative_sea_level,
-        };
+        return data
       }
 
-      return {
-        elevation: 0,
-        lowTide: 0,
-        highTide: 0,
-      };
+      return null;
     },
     [data],
   );
@@ -67,7 +54,7 @@ function Results() {
         <Link to="/">Back </Link>
         <h1 className="text-lg">Report Card</h1>
         <p className="text-gray-500">{address}</p>
-        <DataGraph getLevels={getData} />
+        <DataGraph getLevels={getData} years_to_predict={predictions.always_flooded?.year ?? 300} />
         <section className="my-4  rounded-lg border border-gray-200">
           <h2 className="p-4 border-b font-semibold">Timeline</h2>
           <p className="p-4">

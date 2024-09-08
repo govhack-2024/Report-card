@@ -1,65 +1,130 @@
 import { useMemo } from "react";
+
+
+import { Area, CartesianGrid, ComposedChart, Line, LineChart, XAxis } from "recharts"
+
 import {
-  XYPlot,
-  XAxis,
-  YAxis,
-  AreaSeries,
-  LineSeries,
-  HorizontalGridLines,
-  DiscreteColorLegend,
-} from "react-vis";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import {
+  ChartConfig,
+  ChartContainer,
+  ChartLegend,
+  ChartLegendContent,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart"
+import { LocationRiseResponse } from "@/lib/elevation-api";
+import { predictForwardYears } from "@/lib/climate_model";
+
+const chartConfig = {
+  elevation: {
+    label: "House Height",
+  },
+  sea_level_change: {
+    label: "The Approaching Sea",
+  }
+} satisfies ChartConfig
 
 type DataGraphParams = {
-  getLevels: (year: number) => {
-    lowTide: number;
-    highTide: number;
-    elevation: number;
-  };
+  getLevels: () => LocationRiseResponse | null;
+  years_to_predict: number;
 };
 
 const HIGH_TIDE_COLOR = "#07c5f9";
 const LOW_TIDE_COLOR = "#0d47c4";
 const HOUSE_COLOR = "#ed7512";
 
-export const DataGraph = ({ getLevels }: DataGraphParams) => {
-  const { highTide, lowTide, elevation } = useMemo(() => {
-    const highTide = Array(300);
-    const lowTide = Array(300);
-    const elevation = Array(300);
+const current_year = new Date().getFullYear();
 
-    for (let year = 2024; year < 2324; year++) {
-      const {
-        elevation: predElevation,
-        lowTide: predLowTide,
-        highTide: predHighTide,
-      } = getLevels(year);
-      lowTide[year - 2024] = { x: year, y: predLowTide };
-      highTide[year - 2024] = { x: year, y: predHighTide };
-      elevation[year - 2024] = { x: year, y: predElevation };
+
+export const DataGraph = ({ getLevels, years_to_predict }: DataGraphParams) => {
+  const { elevation } = useMemo(() => {
+    const elevation = Array(years_to_predict);
+
+    const data = getLevels();
+    if (!data) {
+      return { elevation };
     }
 
-    return { highTide, lowTide, elevation };
+    for (let year = 0; year < years_to_predict; year++) {
+      const predictions = predictForwardYears(data, year);
+      const tidal_rand = data.tide_estimation.surge_tide_max * 0.2 * Math.sin(year / 16);
+      elevation[year] = {
+        full_year: year + current_year,
+        elevation: data.current_elevation + predictions.vlm_change,
+        sea_level_change: predictions.sea_level_change + tidal_rand,
+      };
+    }
+
+    return { elevation };
   }, [getLevels]);
 
   return (
     <div className="">
-      <DiscreteColorLegend
-        items={[
-          { title: "Spring High Tide", color: HIGH_TIDE_COLOR },
-          { title: "Spring Low Tide", color: LOW_TIDE_COLOR },
-          { title: "Your property", color: HOUSE_COLOR },
-        ]}
-        width={300}
-        orientation="horizontal"
-      />
-      <XYPlot width={600} height={800}>
-        <HorizontalGridLines />
-        <XAxis />
-        <YAxis />
-        <AreaSeries data={highTide} color={HIGH_TIDE_COLOR} />
-        <AreaSeries data={lowTide} color={LOW_TIDE_COLOR} />
-        <LineSeries data={elevation} color={HOUSE_COLOR} />
-      </XYPlot>
+      <Card>
+        <CardHeader>
+          <CardTitle>Elevation Chart</CardTitle>
+          <CardDescription>
+            {current_year} - {current_year + 300}
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ChartContainer config={chartConfig}>
+            <ComposedChart
+              accessibilityLayer
+              data={elevation}
+              margin={{
+                left: 12,
+                right: 12,
+              }}
+            >
+              <CartesianGrid vertical={false} />
+              <XAxis
+                dataKey="full_year"
+                tickLine={false}
+                interval={"preserveStartEnd"}
+
+                axisLine={false}
+                tickMargin={8}
+              />
+              <ChartTooltip
+                cursor={false}
+                content={<ChartTooltipContent hideLabel />}
+              />
+              <Line
+                dataKey="elevation"
+                
+                type="natural"
+                stroke="hsl(var(--chart-1))"
+                strokeWidth={2}
+                dot={false}
+              />
+              <Area
+                dataKey="sea_level_change"
+                type="natural"
+                fill="hsl(var(--chart-2))"
+                fillOpacity={0.4}
+                stroke="hsl(var(--chart-2))"
+              />
+              <ChartLegend content={<ChartLegendContent />} />
+            </ComposedChart>
+          </ChartContainer>
+        </CardContent>
+        <CardFooter>
+          <div className="flex w-full items-start gap-2 text-sm">
+            <div className="grid gap-2">
+              <div className="flex items-center gap-2 leading-none text-muted-foreground">
+              </div>
+            </div>
+          </div>
+        </CardFooter>
+      </Card>
     </div>
   );
 };
