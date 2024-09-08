@@ -124,7 +124,7 @@ function Results() {
             <div className="p-4 border-t">
               {" "}
               <p className="font-semibold mb-3">Disclaimer</p>
-              <ul className="list-disc list-outside pl-8 space-y-3">
+              <ul className="list-disc list-outside pl-5 space-y-3">
                 <li>Sea level rise is not necessarily linear</li>
                 <li>If the emissions stop, the warming stops</li>
                 <li className="">
