@@ -4,6 +4,7 @@ import { useCompletion } from "./lib/elevation-api";
 import { useEffect, useMemo, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Map } from "@/components/Map";
+import { AddressSelector } from "./components/AddressSelector";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -67,7 +68,7 @@ function App() {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="account">
-            <Select
+            {/* <Select
               options={options}
               onSelect={({ lat, lon, address }) => {
                 navigate(`/results?lat=${lat}&lon=${lon}&address=${address}`);
@@ -75,7 +76,9 @@ function App() {
               inputValue={query}
               onInputChange={setQuery}
               loading={isLoading}
-            />
+            /> */}
+            {/* Mapbox Search */}
+            <AddressSelector />
           </TabsContent>
           <TabsContent value="password">
             <Map />
