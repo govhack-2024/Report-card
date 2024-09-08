@@ -76,7 +76,7 @@ function Results() {
           <p className="text-xs border-b  p-4">
             Assuming nothing changes about carbon emissions..
           </p>
-          <p>Methodology</p>
+
           <div className="p-4">
             <h2 className=" text-md">Your property will be underwater in: </h2>
 
@@ -88,7 +88,7 @@ function Results() {
             </h2>
           </div>
         </div>
-        <div className=" border rounded-md shadow-sm mb-4  mt-4 bg-white">
+        {/* <div className=" border rounded-md shadow-sm mb-4  mt-4 bg-white">
           <p className="text-xs border-b p-4">Climate change impact</p>
           <div className="flex">
             <div className="flex-1 border-r p-4">
@@ -111,7 +111,7 @@ function Results() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <DataGraph
           getLevels={getData}
           years_to_predict={predictions.always_flooded?.year ?? 300}
