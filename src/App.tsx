@@ -142,7 +142,7 @@ function App() {
           </TabsContent>
         </Tabs>
       </section>
-      <footer className="mt-8 text-center text-gray-500 max-w-xl mx-auto ">
+      <footer className="mt-8 text-center text-gray-500 max-w-lg mx-auto text-sm">
         <p>
           Built for the Govhack 2024 Hackathon by{" "}
           <a
