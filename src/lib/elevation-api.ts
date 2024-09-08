@@ -48,12 +48,12 @@ export const useCompletion = ({ currentQuery }: UseCompletionOptions) => {
   return useQuery({
     queryKey: ["address-completion", currentQuery],
     queryFn: async () => {
-      if (currentQuery.trim() == "") {
+      if (currentQuery.trim() == "" || currentQuery.length <= 3) {
         return [];
       }
       let query = currentQuery;
       if (query) {
-        query += " new zealand";
+        query += " New Zealand";
       }
 
       const request = await fetch(

@@ -46,7 +46,7 @@ impl<'a> SearchRequestBuilder<'a> {
         let response = match self
             .nominatim_service
             .get("search?format=jsonv2")
-            .query(&[("q", self.query)])
+            .query(&[("q", self.query),("viewbox", String::from("165.3166934650013,-32.44317582498243,179.43693863120595,-47.86908234091968")),("bounded", String::from("1"))])
             .send()
             .await
         {
