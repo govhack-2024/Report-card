@@ -52,7 +52,9 @@ export const Select = <T,>({
               <p>Loading</p>
             </div>
           ) : options.length === 0 ? (
-            <p>No Results</p>
+            <div className=" text-center w-full my-8">
+              <p>No Results</p>
+            </div>
           ) : (
             <div className="absolute top-0 h-auto max-h-[40vh] overflow-y-auto border bg-white rounded-sm shadow-md">
               {options.map((option, index) => (
