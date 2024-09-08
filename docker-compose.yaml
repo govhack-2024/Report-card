@@ -8,6 +8,6 @@ services:
       dockerfile: backend.Dockerfile
       context: .
       args:
-        - VITE_MAPBOX_API_KEY: ${VITE_MAPBOX_API_KEY}
+        - VITE_MAPBOX_API_KEY=$VITE_MAPBOX_API_KEY
     ports:
       - "8080:8080"
