@@ -12,7 +12,6 @@ jobs:
       run: |
         echo "Deploying to production"
         source /home/linuxuser/prod.env 
-        //echo $VITE_MAPBOX_API_KEY
         docker compose build
         docker compose up -d
         echo "Deployed!"
