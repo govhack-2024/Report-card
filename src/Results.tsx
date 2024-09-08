@@ -64,10 +64,11 @@ function Results() {
   return (
     <>
       <section className="mt-4  mx-auto max-w-2xl rounded-md  p-8 ">
-        <p className="text-black text-sm">
-          Report for <br /> {address}
-        </p>{" "}
-        <div className=" border rounded-md shadow-sm mb-4  mt-8 bg-white">
+        <div className="p-4 bg-white border-gray-200 shadow-sm rounded-md">
+          <h2 className="text-sm font-semibold"> Report for</h2>
+          <p className="text-black text-sm">{address}</p>{" "}
+        </div>
+        <div className=" border rounded-md shadow-sm mb-4  mt-4 bg-white">
           <p className="text-xs border-b  p-4">
             Assuming nothing changes about carbon emissions..
           </p>
