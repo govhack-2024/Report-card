@@ -11,6 +11,6 @@ jobs:
     - name: Deploy to production
       run: |
         echo "Deploying to production"
-        docker compose build
-        docker compose up -d
+        source /home/linuxuser/prod.env && docker compose build
+        source /home/linuxuser/prod.env && docker compose up -d
         echo "Deployed!"
