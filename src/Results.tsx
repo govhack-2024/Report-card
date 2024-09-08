@@ -74,6 +74,7 @@ function Results() {
             Years
           </h2>
         </div>
+        <DataGraph getLevels={getData} years_to_predict={predictions.always_flooded?.year ?? 300} />
         <section className="mb-4 mt-24  rounded-lg border border-gray-200">
           <h2 className="p-4  text-xs  font-semibold">
             Stats for nerds &amp; modelling assumptions:
