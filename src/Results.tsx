@@ -51,25 +51,24 @@ function Results() {
 
   return (
     <>
-      <section className="mt-8  mx-auto max-w-2xl rounded-md  p-8 ">
+      <section className="mt-4  mx-auto max-w-2xl rounded-md  p-8 ">
         <p className="text-black text-sm">
           Report for <br /> {address}
         </p>{" "}
-        <div className="p-4 border rounded-md shadow-sm mb-8  mt-8 bg-white">
+        <div className="p-4 border rounded-md shadow-sm mb-4  mt-8 bg-white">
           <p className="text-xs border-b mb-2 pb-4">
             Assuming nothing changes about carbon emissions..
           </p>
           <h2 className=" text-md">Your property will be underwater in: </h2>
 
           <h2 className="mt-2 text-4xl">
-            {
-              predictions ? Object.values(predictions)
-                .sort((a, b) => a - b)[0].year : "~"
-            }
+            {predictions
+              ? Object.values(predictions).sort((a, b) => a - b)[0].year
+              : "~"}
             &nbsp;Years
           </h2>
         </div>
-        <div className=" border rounded-md shadow-sm mb-8  mt-8 bg-white">
+        <div className=" border rounded-md shadow-sm mb-4  mt-4 bg-white">
           <p className="text-xs border-b p-4">Climate change impact</p>
           <div className="flex">
             <div className="flex-1 border-r p-4">
@@ -91,8 +90,8 @@ function Results() {
           getLevels={getData}
           years_to_predict={predictions.always_flooded?.year ?? 300}
         />
-        <section className="mb-4 mt-8  rounded-lg border border-gray-200 bg-white">
-          <h2 className="p-4  text-xs  font-semibold">
+        <section className="mb-4 mt-4  rounded-lg border border-gray-200 bg-white">
+          <h2 className="p-4  text-xs ">
             Stats for nerds &amp; modelling assumptions:
           </h2>
           <div className="p-4 flex border-t flex-wrap">

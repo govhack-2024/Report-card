@@ -51,13 +51,26 @@ export const Map = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full gap-2">
-      <div className="relative w-full h-[20rem]">
-        <div ref={mapDiv} className="map-container w-full h-full"></div>
+      <div className="mt-4 flex gap-4 items-center border p-4 rounded-lg">
+        <img src="./icons/info.svg" className="w-4"></img>
+        <p>
+          Drag and zoom around the map to navigate, then click or touch on a
+          position to choose it.
+        </p>
+      </div>
+      <div className="relative w-full h-[20rem] mt-2">
+        <div
+          ref={mapDiv}
+          className="map-container w-full h-full rounded-lg"
+        ></div>
       </div>
 
       {pinLocation ? (
-        <Link to={`/Results?lat=${pinLocation.lat}&lon=${pinLocation.lon}`}>
-          <button>Check at pin location</button>
+        <Link
+          to={`/Results?lat=${pinLocation.lat}&lon=${pinLocation.lon}`}
+          className="bg-blue-600 text-white rounded-md p-4 w-full text-center"
+        >
+          Submit selected location
         </Link>
       ) : (
         <></>

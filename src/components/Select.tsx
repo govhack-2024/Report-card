@@ -15,8 +15,8 @@ export const Select = <T,>({
 }: SelectProps<T>) => {
   return (
     <div className="border rounded-lg mt-4">
-      <h2 className="p-4 font-semibold border-b">Address Search</h2>
       <div className="p-4">
+        <label className=" text-sm mb-1 block">Address Search </label>
         <input
           onChange={(event) => onInputChange(event.target.value)}
           value={inputValue}
